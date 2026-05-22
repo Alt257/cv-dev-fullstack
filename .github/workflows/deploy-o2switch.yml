@@ -17,9 +17,9 @@ jobs:
       with:
         username: ${{ secrets.O2SWITCH_USER }}
         password: ${{ secrets.O2SWITCH_PASSWORD }}
-        host: ${{ secrets.O2SWITCH_HOST }}
+        server: ${{ secrets.O2SWITCH_HOST }}
         port: ${{ secrets.O2SWITCH_PORT }}
         local_path: './*'
         remote_path: '.'  # Remplacer par votre chemin distant
         sftp_only: true
-        delete: true
+        ssh_private_key: ''
