@@ -21,3 +21,4 @@ jobs:
         local_path: './*'
         remote_path: '.'  # Remplacer par votre chemin distant
         sftp_only: true
+        delete: true
