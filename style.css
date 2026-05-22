@@ -1,0 +1,612 @@
+/* ============================================================
+   CV Benoît Rataux – Feuille de styles
+   Structure : Variables → Reset → Layout → Sidebar → Main
+              → Composants → Responsive → Print
+   ============================================================ */
+
+/* ── Variables ─────────────────────────────────────────────── */
+:root {
+  --navy:       #0f172a;
+  --navy-light: #1e293b;
+  --teal:       #06b6d4;
+  --teal-dark:  #0891b2;
+  --teal-light: #67e8f9;
+  --white:      #ffffff;
+  --sidebar-bg: #0f172a;
+  --page-bg:    #e2e8f0;
+  --muted:      #94a3b8;
+  --muted-dark: #64748b;
+  --text-main:  #1e293b;
+  --text-body:  #334155;
+  --text-light: #cbd5e1;
+  --accent-bg:  #f0fdfa;
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --transition: 150ms ease;
+}
+
+/* ── Reset ──────────────────────────────────────────────────── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: var(--page-bg);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+/* ── Bouton impression ─────────────────────────────────────── */
+.print-btn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 100;
+  background: var(--teal);
+  color: var(--navy);
+  border: none;
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(6, 182, 212, 0.35);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.print-btn:hover {
+  background: #22d3ee;
+  transform: translateY(-1px);
+}
+
+.print-hint {
+  position: fixed;
+  top: 58px;
+  right: 16px;
+  z-index: 100;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--muted-dark);
+  max-width: 260px;
+  text-align: right;
+  line-height: 1.4;
+}
+
+/* ── Wrapper de page ────────────────────────────────────────── */
+.page-wrapper {
+  padding: 24px 16px 48px;
+}
+
+/* ── CV Page (grille deux colonnes) ────────────────────────── */
+.cv-page {
+  width: 100%;
+  max-width: 900px;
+  background: var(--white);
+  margin: 0 auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+/* ── Barre décorative teal (haut de la colonne main) ───────── */
+.cv-page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 70%;
+  height: 3px;
+  background: linear-gradient(90deg, #06b6d4, #0891b2, #0e7490);
+}
+
+/* ── Sidebar ────────────────────────────────────────────────── */
+.sidebar {
+  background: var(--sidebar-bg);
+  color: var(--text-light);
+  padding: 28px 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* En-tête nom */
+.sidebar-name {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #f1f5f9;
+  line-height: 1.15;
+}
+
+.sidebar-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--teal-light);
+  margin-top: 6px;
+  letter-spacing: 0.3px;
+}
+
+.geometric-bar {
+  width: 40px;
+  height: 3px;
+  background: var(--teal);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+.dot-pattern {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  width: 40px;
+  opacity: 0.25;
+  margin-top: 8px;
+}
+
+.dot-pattern span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+/* Titres de section — sidebar */
+.section-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: var(--teal);
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--teal);
+  margin-bottom: 8px;
+}
+
+/* Contact */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #cbd5e1;
+  line-height: 1.4;
+  word-break: break-all;
+}
+
+.contact-icon {
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 16px;
+  text-align: center;
+}
+
+/* Compétences — sous-catégories */
+.sidebar-label {
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
+
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.pill {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: rgba(6, 182, 212, 0.15);
+  color: var(--teal-light);
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  letter-spacing: 0.2px;
+  line-height: 1.6;
+}
+
+/* Langues */
+.lang-item {
+  font-size: 11px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.lang-item + .lang-item {
+  margin-top: 2px;
+}
+
+/* Aptitudes */
+.aptitude-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.aptitude-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+.aptitude-dot {
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+  margin-top: 4px;
+}
+
+/* Intérêts */
+.interest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.interest-item {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* ── Contenu principal ──────────────────────────────────────── */
+.main-content {
+  padding: 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: var(--white);
+}
+
+/* Titres de section — main */
+.section-title-main {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--navy);
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--teal);
+  margin-bottom: 10px;
+}
+
+/* Profil */
+.profil-box {
+  border-left: 3px solid var(--teal);
+  padding: 10px 14px;
+  background: var(--accent-bg);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 12px;
+  color: var(--text-main);
+  line-height: 1.65;
+}
+
+/* Expériences */
+.exp-block {
+  margin-bottom: 14px;
+}
+
+.exp-block:last-child {
+  margin-bottom: 0;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.exp-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.3;
+  flex: 1;
+}
+
+.exp-date {
+  font-size: 10px;
+  color: var(--muted);
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.exp-company {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--teal-dark);
+  margin-top: 1px;
+}
+
+.exp-bullets {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.exp-bullet {
+  font-size: 11px;
+  color: var(--text-body);
+  line-height: 1.5;
+  padding-left: 14px;
+  position: relative;
+}
+
+.exp-bullet::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+/* Formation */
+.formation-block {
+  margin-bottom: 10px;
+}
+
+.formation-block:last-child {
+  margin-bottom: 0;
+}
+
+.formation-degree {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.3;
+  flex: 1;
+}
+
+.formation-school {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--teal-dark);
+  margin-top: 1px;
+}
+
+.formation-note {
+  font-size: 10px;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 1px;
+}
+
+/* Footer discret */
+.footer-cv {
+  grid-column: 1 / -1;
+  text-align: right;
+  padding: 6px 24px 8px;
+  font-size: 8px;
+  color: var(--text-light);
+  opacity: 0.4;
+  background: var(--white);
+}
+
+/* ── Responsive — Tablette (≤ 768px) ──────────────────────── */
+@media (max-width: 768px) {
+  .cv-page {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+
+  .cv-page::after {
+    left: 0;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #06b6d4, #0891b2, #0e7490);
+  }
+
+  .sidebar {
+    padding: 24px 20px;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  }
+
+  .sidebar-name {
+    font-size: 30px;
+  }
+
+  .sidebar-title {
+    font-size: 13px;
+  }
+
+  .contact-item {
+    font-size: 13px;
+    word-break: break-word;
+  }
+
+  .pill {
+    font-size: 10px;
+  }
+
+  .lang-item,
+  .aptitude-item {
+    font-size: 13px;
+  }
+
+  .interest-item {
+    font-size: 12px;
+  }
+
+  .main-content {
+    padding: 24px 20px;
+  }
+
+  .profil-box {
+    font-size: 13px;
+  }
+
+  .exp-title {
+    font-size: 14px;
+  }
+
+  .exp-date {
+    font-size: 11px;
+  }
+
+  .exp-company {
+    font-size: 12px;
+  }
+
+  .exp-bullet {
+    font-size: 12px;
+  }
+
+  .formation-degree {
+    font-size: 13px;
+  }
+
+  .print-btn {
+    font-size: 13px;
+    padding: 9px 14px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .print-hint {
+    display: none;
+  }
+}
+
+/* ── Responsive — Mobile (≤ 480px) ────────────────────────── */
+@media (max-width: 480px) {
+  .page-wrapper {
+    padding: 12px 8px 32px;
+  }
+
+  .cv-page {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .sidebar {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+
+  .sidebar-name {
+    font-size: 26px;
+  }
+
+  .sidebar-title {
+    font-size: 12px;
+  }
+
+  .main-content {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .exp-date {
+    align-self: flex-start;
+  }
+
+  .print-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+/* ── Impression PDF ─────────────────────────────────────────── */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 8mm;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: none !important;
+    font-size: 14px;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    animation: none !important;
+  }
+
+  .page-wrapper {
+    padding: 0 !important;
+    background: none !important;
+  }
+
+  .cv-page {
+    box-shadow: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 279mm; !important;
+    border-radius: 0 !important;
+    grid-template-columns: 30% 70% !important;
+    page-break-inside: avoid;
+  }
+
+  .sidebar {
+    border-radius: 0 !important;
+    align-self: stretch;
+  }
+
+  .footer-cv {
+    display: none;
+  }
+}
