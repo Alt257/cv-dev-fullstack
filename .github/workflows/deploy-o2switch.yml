@@ -1,6 +1,7 @@
 name: Deploy to O2switch
 
 on:
+  workflow_dispatch: #
   push:
     branches: [ main ]
 
