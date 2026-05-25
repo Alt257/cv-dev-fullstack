@@ -294,7 +294,7 @@ a:hover {
 
 /* ── Contenu principal ──────────────────────────────────────── */
 .main-content {
-  padding: 28px 28px 24px;
+  padding: 20px 26px 20px;
   display: flex;
   flex-direction: column;
   gap: 18px;
