@@ -1,0 +1,9 @@
+name: Find GitHub Actions IP
+on: [workflow_dispatch]
+
+jobs:
+  find-ip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get IP
+        run: curl -s https://checkip.amazonaws.com
