@@ -351,10 +351,10 @@ blockquote::after {
 
 /* ── Contenu principal ──────────────────────────────────────── */
 .main-content {
-  padding: 16px 26px 16px;
+  padding: 12px 26px 12px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 13px;
   background: var(--white);
 }
 
@@ -639,6 +639,11 @@ blockquote::after {
     color: black !important;
     background: white !important;
     box-shadow: none !important;
+    border: none !important;
+  }
+
+  body.print-bw .cv-page::after {
+    display: none !important;
   }
   /* impression en noir et blanc */
 
