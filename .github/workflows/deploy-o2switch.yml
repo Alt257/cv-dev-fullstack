@@ -14,12 +14,15 @@ jobs:
     
     - name: Deploy via SFTP
       uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+      timeout-minutes: 5
       with:
         username: ${{ secrets.O2SWITCH_USER }}
         password: ${{ secrets.O2SWITCH_PASSWORD }}
         server: ${{ secrets.O2SWITCH_HOST }}
         port: ${{ secrets.O2SWITCH_PORT }}
         local_path: './*'
-        remote_path: '/home/sugu5852/sites/cv.la-bonne-idee.com'
+        remote_path: '.'
         sftp_only: true
         ssh_private_key: ''
+        delete_remote_files: 'true'
+        sftpArgs: '-o ConnectTimeout=5'
