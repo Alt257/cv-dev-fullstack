@@ -20,6 +20,6 @@ jobs:
         server: ${{ secrets.O2SWITCH_HOST }}
         port: ${{ secrets.O2SWITCH_PORT }}
         local_path: './*'
-        remote_path: '.'  # Remplacer par votre chemin distant
+        remote_path: '/home/sugu5852/sites/cv.la-bonne-idee.com'
         sftp_only: true
         ssh_private_key: ''
