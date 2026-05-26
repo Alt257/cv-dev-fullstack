@@ -69,6 +69,7 @@ blockquote {
 
 blockquote::before {
   content: "“";
+  font-family: "Arial Rounded MT Bold", serif;
   font-size: 2.2rem;
   line-height: 1;
   position: absolute;
@@ -78,6 +79,7 @@ blockquote::before {
 
 blockquote::after {
   content: "”";
+  font-family: "Arial Rounded MT Bold", serif;
   font-size: 2.2rem;
   line-height: 1;
   position: absolute;
