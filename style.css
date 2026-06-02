@@ -646,6 +646,15 @@ blockquote::after {
     margin-bottom: 6px !important;
   }
 
+  body.print-bw .profil-box {
+    padding: 0 !important;
+  }
+
+  body.print-bw blockquote {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
   body.print-bw .side {
     gap: 22px !important;
   }
@@ -666,11 +675,6 @@ blockquote::after {
 
   body.print-bw .pill {
     padding: 0 !important;
-  }
-
-  body.print-bw .profil-box {
-    padding-top: 0 !important;
-    padding-bottom: 18px !important;
   }
 
   body.print-bw * {
