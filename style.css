@@ -630,10 +630,47 @@ blockquote::after {
     margin: 8mm;
   }
 
-  /* impression en noir et blanc */
+  /*>>> impression en noir et blanc */
   body.print-bw {
     color: black;
     background: white;
+  }
+
+  body.print-bw .main-content {
+    gap: 20px !important;
+  }
+
+  body.print-bw .section-title-main {
+    font-size: 14px !important;
+    border-bottom: none !important;
+    margin-bottom: 6px !important;
+  }
+
+  body.print-bw .side {
+    gap: 22px !important;
+  }
+
+  body.print-bw .sidebar-label {
+    font-weight: 700 !important;
+  }
+
+  body.print-bw .section-title {
+    font-weight: 900 !important;
+    border-bottom: none !important;
+    margin-bottom: 1px !important;
+  }
+
+  body.print-bw .pill-group {
+    gap: 6px !important;
+  }
+
+  body.print-bw .pill {
+    padding: 0 !important;
+  }
+
+  body.print-bw .profil-box {
+    padding-top: 0 !important;
+    padding-bottom: 18px !important;
   }
 
   body.print-bw * {
@@ -646,6 +683,7 @@ blockquote::after {
   body.print-bw .cv-page::after {
     display: none !important;
   }
+  /*<<< impression en noir et blanc */
 
   html,
   body {
@@ -654,6 +692,8 @@ blockquote::after {
     background: none !important;
     font-size: 11px !important;
     width: 100%;
+    height: 100%;
+    min-height: 100vh;
     -webkit-text-size-adjust: 100% !important;
     text-size-adjust: 100% !important;
   }
@@ -669,6 +709,8 @@ blockquote::after {
   .page-wrapper {
     padding: 0 !important;
     background: none !important;
+    height: 100%;
+    min-height: 100vh;
   }
 
   .cv-page {
@@ -676,19 +718,23 @@ blockquote::after {
     margin: 0 auto !important;
     width: 100% !important;
     max-width: none !important;
-    min-height: auto !important;
+    height: 100%;
+    min-height: 100vh;
     border-radius: 0 !important;
     grid-template-columns: 30% 70% !important;
     page-break-inside: avoid;
     break-inside: avoid;
     overflow: visible !important;
+    align-items: stretch !important;
   }
 
   .sidebar {
     padding: 26px 22px 24px !important;
-    gap: 13px !important;
+    gap: 20px !important;
     border-radius: 0 !important;
-    align-self: stretch;
+    align-self: stretch !important;
+    height: 100%;
+    min-height: 100vh;
   }
 
   .main-content {
@@ -701,141 +747,5 @@ blockquote::after {
     line-height: 1.08 !important;
   }
 
-  .main-content > h1 {
-    font-size: 28px !important;
-    line-height: 1.18 !important;
-  }
-
-  .section-title {
-    font-size: 10px !important;
-    line-height: 1.25 !important;
-    margin-bottom: 7px !important;
-    padding-bottom: 4px !important;
-  }
-
-  .section-title-main {
-    font-size: 18px !important;
-    line-height: 1.25 !important;
-    margin-bottom: 8px !important;
-    padding-bottom: 4px !important;
-  }
-
-  .sidebar-label {
-    font-size: 9px !important;
-    line-height: 1.25 !important;
-    margin-top: 7px !important;
-    margin-bottom: 4px !important;
-  }
-
-  .status-list,
-  .contact-list {
-    gap: 8px !important;
-  }
-
-  .status-item,
-  .contact-item {
-    font-size: 11px !important;
-    line-height: 1.45 !important;
-  }
-
-  .lang-item,
-  .aptitude-item {
-    font-size: 11px !important;
-    line-height: 1.45 !important;
-  }
-
-  .aptitude-list {
-    gap: 6px !important;
-  }
-
-  .interest-list {
-    gap: 5px !important;
-  }
-
-  .interest-item {
-    font-size: 10px !important;
-    line-height: 1.4 !important;
-  }
-
-  .pill-group {
-    gap: 3px !important;
-  }
-
-  .pill {
-    font-size: 9px !important;
-    line-height: 1.55 !important;
-    padding: 2px 7px !important;
-  }
-
-  .profil-box {
-    font-size: 12px !important;
-    line-height: 1.55 !important;
-    padding: 9px 12px !important;
-  }
-
-  blockquote {
-    font-size: 16px !important;
-    line-height: 1.45 !important;
-    padding-bottom: 0.35rem !important;
-  }
-
-  blockquote::before,
-  blockquote::after {
-    font-size: 1.8rem !important;
-    line-height: 1 !important;
-  }
-
-  .exp-block {
-    margin-bottom: 11px !important;
-  }
-
-  .exp-title {
-    font-size: 14px !important;
-    line-height: 1.3 !important;
-  }
-
-  .exp-date {
-    font-size: 10px !important;
-    line-height: 1.35 !important;
-  }
-
-  .exp-company {
-    font-size: 11px !important;
-    line-height: 1.35 !important;
-    margin-top: 1px !important;
-  }
-
-  .exp-bullets {
-    margin-top: 5px !important;
-    gap: 3px !important;
-  }
-
-  .exp-bullet {
-    font-size: 10px !important;
-    line-height: 1.45 !important;
-    padding-left: 12px !important;
-  }
-
-  .formation-block {
-    margin-bottom: 8px !important;
-  }
-
-  .formation-degree {
-    font-size: 11px !important;
-    line-height: 1.3 !important;
-  }
-
-  .formation-school {
-    font-size: 10px !important;
-    line-height: 1.35 !important;
-  }
-
-  .formation-note {
-    font-size: 10px !important;
-    line-height: 1.35 !important;
-  }
-
-  .footer-cv {
-    display: none;
-  }
+  /* ... existing code ... */
 }
