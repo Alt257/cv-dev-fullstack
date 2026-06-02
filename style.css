@@ -627,70 +627,12 @@ blockquote::after {
   }
 
   @page {
-    margin: 8mm;
+    margin: var(--print-page-margin) !important;
   }
-
-  /*>>> impression en noir et blanc */
-  body.print-bw {
-    color: black;
-    background: white;
-  }
-
-  body.print-bw .main-content {
-    gap: 20px !important;
-  }
-
-  body.print-bw .section-title-main {
-    font-size: 14px !important;
-    border-bottom: none !important;
-    margin-bottom: 6px !important;
-  }
-
-  body.print-bw .profil-box {
-    padding: 0 !important;
-  }
-
-  body.print-bw blockquote {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-
-  body.print-bw .side {
-    gap: 22px !important;
-  }
-
-  body.print-bw .sidebar-label {
-    font-weight: 700 !important;
-  }
-
-  body.print-bw .section-title {
-    font-weight: 900 !important;
-    border-bottom: none !important;
-    margin-bottom: 1px !important;
-  }
-
-  body.print-bw .pill-group {
-    gap: 6px !important;
-  }
-
-  body.print-bw .pill {
-    padding: 0 !important;
-  }
-
-  body.print-bw * {
-    color: black !important;
-    background: white !important;
-    box-shadow: none !important;
-    border: none !important;
-  }
-
-  body.print-bw .cv-page::after {
-    display: none !important;
-  }
-  /*<<< impression en noir et blanc */
 
   html,
   body {
+    --print-page-margin: 0;
     margin: 0;
     padding: 0;
     background: none !important;
@@ -746,10 +688,73 @@ blockquote::after {
     gap: 12px !important;
   }
 
+  .exp-header {
+    flex-direction: row !important;
+  }
+
   .sidebar-name {
     font-size: 25px !important;
     line-height: 1.08 !important;
   }
 
-  /* ... existing code ... */
+
+/* ── Impression Noir et Blanc ───────────────────────────────── */
+  body.print-bw {
+    --print-page-margin: 8mm;
+    color: black;
+    background: white;
+  }
+
+  body.print-bw .main-content {
+    gap: 20px !important;
+  }
+
+  body.print-bw .section-title-main {
+    font-size: 14px !important;
+    border-bottom: none !important;
+    margin-bottom: 6px !important;
+  }
+
+  body.print-bw .profil-box {
+    padding: 0 !important;
+  }
+
+  body.print-bw blockquote {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 8px !important;
+  }
+
+  body.print-bw .side {
+    gap: 22px !important;
+  }
+
+  body.print-bw .sidebar-label {
+    font-weight: 700 !important;
+  }
+
+  body.print-bw .section-title {
+    font-weight: 900 !important;
+    border-bottom: none !important;
+    margin-bottom: 1px !important;
+  }
+
+  body.print-bw .pill-group {
+    gap: 6px !important;
+  }
+
+  body.print-bw .pill {
+    padding: 0 !important;
+  }
+
+  body.print-bw * {
+    color: black !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  body.print-bw .cv-page::after {
+    display: none !important;
+  }
 }
