@@ -6,22 +6,22 @@
 
 /* ── Variables ─────────────────────────────────────────────── */
 :root {
-  --navy:       #0f172a;
+  --navy: #0f172a;
   --navy-light: #1e293b;
-  --teal:       #06b6d4;
-  --teal-dark:  #0891b2;
+  --teal: #06b6d4;
+  --teal-dark: #0891b2;
   --teal-light: #67e8f9;
-  --white:      #ffffff;
+  --white: #ffffff;
   --sidebar-bg: #0f172a;
-  --page-bg:    #e2e8f0;
-  --muted:      #94a3b8;
+  --page-bg: #e2e8f0;
+  --muted: #94a3b8;
   --muted-dark: #64748b;
-  --text-main:  #1e293b;
-  --text-body:  #334155;
+  --text-main: #1e293b;
+  --text-body: #334155;
   --text-light: #cbd5e1;
-  --accent-bg:  #f0fdfa;
-  --radius-sm:  6px;
-  --radius-md:  10px;
+  --accent-bg: #f0fdfa;
+  --radius-sm: 6px;
+  --radius-md: 10px;
   --transition: 150ms ease;
 }
 
@@ -660,18 +660,27 @@ blockquote::after {
   }
 
   .cv-page {
-    box-shadow: none !important;
-    margin: 0 auto !important;
-    width: 100% !important;
-    max-width: none !important;
     height: 100%;
     min-height: 100vh;
-    border-radius: 0 !important;
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    display: grid !important;
     grid-template-columns: 30% 70% !important;
+    grid-template-rows: auto !important;
+    position: relative;
+    border-radius: 0 !important;
+    overflow: hidden !important;
     page-break-inside: avoid;
     break-inside: avoid;
-    overflow: visible !important;
-    align-items: stretch !important;
+  }
+
+  .cv-page::after {
+    top: 0;
+    bottom: auto;
+    left: 30%;
+    width: 70%;
   }
 
   .main-content {
@@ -706,7 +715,7 @@ blockquote::after {
     font-size: 9px !important;
   }
 
-  .lang-item
+  .lang-item,
   .aptitude-item {
     font-size: 11px !important;
   }
@@ -740,7 +749,7 @@ blockquote::after {
   }
 
 
-/* ── Impression Noir et Blanc ───────────────────────────────── */
+  /* ── Impression Noir et Blanc ───────────────────────────────── */
   body.print-bw {
     --print-page-margin: 8mm;
     color: black;
@@ -798,5 +807,7 @@ blockquote::after {
 
   body.print-bw .cv-page::after {
     display: none !important;
+    background: none !important;
+    height: 0 !important;
   }
 }
