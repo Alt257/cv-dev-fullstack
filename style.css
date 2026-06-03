@@ -124,8 +124,11 @@ blockquote::after {
   font-style: italic;
   color: var(--muted-dark);
   max-width: 260px;
-  text-align: right;
+  text-align: center;
   line-height: 1.4;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 4px;
 }
 
 /* ── Wrapper de page ────────────────────────────────────────── */
@@ -635,7 +638,7 @@ blockquote::after {
     margin: 0;
     padding: 0;
     background: none !important;
-    font-size: 11px !important;
+    font-size: 9px !important;
     width: 100%;
     height: 100%;
     -webkit-text-size-adjust: 100% !important;
@@ -667,7 +670,7 @@ blockquote::after {
     grid-template-rows: auto !important;
     position: relative;
     border-radius: 0 !important;
-    overflow: hidden !important;
+    overflow: visible !important;
     page-break-inside: avoid;
     break-inside: avoid;
   }
@@ -677,11 +680,6 @@ blockquote::after {
     bottom: auto;
     left: 30%;
     width: 70%;
-  }
-
-  .main-content {
-    padding: 26px 22px 24px !important;
-    gap: 12px !important;
   }
 
   .sidebar {
@@ -718,6 +716,19 @@ blockquote::after {
     font-size: 10px !important;
   }
 
+  .main-content {
+    padding: 26px 22px 24px !important;
+    gap: 12px !important;
+  }
+
+  blockquote {
+    font-size: 12px !important;
+  }
+
+  .profil-box {
+    font-size: 10px;
+  }
+
   .exp-title {
     font-size: 13px !important;
   }
@@ -745,13 +756,13 @@ blockquote::after {
 
   /* ── Impression Noir et Blanc ───────────────────────────────── */
   body.print-bw {
-    --print-page-margin: 8mm;
+    padding: 5mm 5mm !important;
     color: black;
     background: white;
   }
 
   body.print-bw .main-content {
-    gap: 20px !important;
+    gap: 12px !important;
   }
 
   body.print-bw .section-title-main {
@@ -765,6 +776,7 @@ blockquote::after {
   }
 
   body.print-bw blockquote {
+    font-size: 12px !important;
     padding-top: 4px !important;
     padding-bottom: 4px !important;
     margin-bottom: 8px !important;
@@ -776,6 +788,7 @@ blockquote::after {
 
   body.print-bw .sidebar-label {
     font-weight: 700 !important;
+    margin-top: 12px !important;
   }
 
   body.print-bw .section-title {
@@ -785,11 +798,12 @@ blockquote::after {
   }
 
   body.print-bw .pill-group {
-    gap: 6px !important;
+    gap: 8px !important;
   }
 
   body.print-bw .pill {
     padding: 0 !important;
+    line-height: 1.2 !important;
   }
 
   body.print-bw * {
