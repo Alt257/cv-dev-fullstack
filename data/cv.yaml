@@ -5,11 +5,9 @@ identity:
   description: "CV de Benoît Rataux – Développeur Full Stack Web & Mobile (.NET Core, Angular, Flutter)"
 
 status:
-  - icon: "assets/stamp-on-document.png"
-    alt: "approuvé"
+  - iconImage: "assets/stamp-on-document.png"
     text: "Permis de travail Ouvert (2028)"
-  - icon: "assets/accept.png"
-    alt: "Disponible"
+  - iconImage: "assets/accept.png"
     text: "Disponible immédiatement"
 
 contact:
