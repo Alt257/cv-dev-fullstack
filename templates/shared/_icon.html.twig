@@ -1,0 +1,16 @@
+{# Choix de la méthode pour afficher l'icone #}
+
+{% if icon is not null %}
+    <span aria-hidden="true"
+          class={{ class }}
+    >
+        {{ icon }}
+    </span>
+
+{% elseif iconImage is not null %}
+    <img aria-hidden="true"
+         class="{{ class }}"
+         src="{{ iconImage }}"
+         alt=""
+    >
+{% endif %}
