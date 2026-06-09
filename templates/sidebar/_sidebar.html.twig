@@ -6,7 +6,7 @@
     <!-- En-tête -->
     <div class="sidebar-header">
         <h1 class="sidebar-name">{{ identity.firstname }}<br>{{ identity.lastname }}</h1>
-        
+
         <div aria-hidden="true" class="dot-pattern">
             <span></span><span></span><span></span>
             <span></span><span></span><span></span>
@@ -16,31 +16,8 @@
 
     {% include 'sidebar/section/_status.html.twig' %}
 
-    <!-- Contact -->
-    <section aria-label="Contact">
-        <div class="section-title">Contact</div>
-        <ul class="contact-list" style="list-style:none;">
-            <li class="contact-item">
-                <span aria-hidden="true" class="contact-icon">📍</span>
-                Montréal, QC, Canada
-            </li>
-            <li class="contact-item">
-                <span aria-hidden="true" class="contact-icon">✉️</span>
-                <a href="mailto:benoit.rataux@gmail.com">benoit.rataux@gmail.com</a>
-            </li>
-            <li class="contact-item">
-                <img alt="LinkedIn icon" aria-hidden="true"
-                     class="contact-icon"
-                     src="https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8">
-                <a href="https://www.linkedin.com/in/benoit-rataux" rel="noopener" target="_blank">linkedin.com/in/benoit-rataux</a>
-            </li>
-            <li class="contact-item">
-                <img alt="GitHub icon" aria-hidden="true" class="contact-icon"
-                     src="https://github.com/fluidicon.png"/>
-                <a href="https://github.com/Alt257" rel="noopener" target="_blank">github.com/Alt257</a>
-            </li>
-        </ul>
-    </section>
+    {% include 'sidebar/section/_contact.html.twig' %}
+
 
     <!-- Compétences techniques -->
     <section aria-label="Compétences techniques">
