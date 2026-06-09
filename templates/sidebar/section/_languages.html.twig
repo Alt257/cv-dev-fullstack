@@ -1,0 +1,10 @@
+<!-- Langues -->
+<section aria-label="Langues">
+    <div class="section-title">Langues</div>
+
+    {% for item in languages %}
+        <p class="lang-item">
+            {{ item.flag }} {{ item.name }} — <strong>{{ item.level }}</strong>
+        </p>
+    {% endfor %}
+</section>
