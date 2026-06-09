@@ -1,0 +1,12 @@
+<section aria-label="Statuts">
+    <ul class="status-list" style="list-style:none;">
+        {% for item in status %}
+            <li class="status-item">
+                <img class="status-icon"
+                     src="{{ item.icon }}"
+                     alt="{{ item.alt }}"
+                     aria-hidden="true"
+                >{{ item.text }}</li>
+        {% endfor %}
+    </ul>
+</section>

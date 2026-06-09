@@ -6,8 +6,7 @@
     <!-- En-tête -->
     <div class="sidebar-header">
         <h1 class="sidebar-name">{{ identity.firstname }}<br>{{ identity.lastname }}</h1>
-        <!--          <p class="sidebar-title">Développeur Full Stack Web &amp; Mobile</p>-->
-        <!--          <div class="geometric-bar"></div>-->
+        
         <div aria-hidden="true" class="dot-pattern">
             <span></span><span></span><span></span>
             <span></span><span></span><span></span>
@@ -15,20 +14,7 @@
         </div>
     </div>
 
-    <section aria-label="Statuts">
-        <ul class="status-list" style="list-style:none;">
-            <li class="status-item">
-                <img alt="approuvé" class="status-icon" height="24" src="assets/icons/stamp-on-document.png"
-                     width="24">
-                Permis de travail Ouvert (2028)
-            </li>
-            <li class="status-item">
-                <img alt="Disponible" class="status-icon" height="24" src="assets/icons/accept.png"
-                     width="24">
-                Disponible immédiatement
-            </li>
-        </ul>
-    </section>
+    {% include 'sidebar/section/_status.html.twig' %}
 
     <!-- Contact -->
     <section aria-label="Contact">
