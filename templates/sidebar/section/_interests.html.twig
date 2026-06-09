@@ -1,0 +1,14 @@
+<!-- Intérêts -->
+<section aria-label="Intérêts">
+    <div class="section-title">Intérêts</div>
+    <ul class="interest-list" style="list-style:none;">
+
+        {% for item in interests %}
+            <li class="interest-item">
+                {{ item.icon }}
+                {{ item.text }}
+            </li>
+
+        {% endfor %}
+    </ul>
+</section>
