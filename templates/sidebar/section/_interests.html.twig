@@ -5,8 +5,12 @@
 
         {% for item in interests %}
             <li class="interest-item">
-                {{ item.icon }}
-                {{ item.text }}
+
+                {% include 'shared/_list-item.html.twig' with {
+                    itemType: 'interest'
+                    item: item,
+                } only %}
+
             </li>
 
         {% endfor %}
