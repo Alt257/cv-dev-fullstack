@@ -84,10 +84,14 @@ aptitudes:
   - "Pensée systémique & architecture"
 
 interests:
-  - "🎭 Théâtre d'improvisation (troupe K.A.O.S.)"
-  - "📡 Veille tech (TDD, API, sécurité, IA)"
-  - "🎲 Jeux de rôle & création de décors"
-  - "🎵 Musique & sculpture"
+  - icon: "🎭"
+    text: "Théâtre d'improvisation (troupe K.A.O.S.)"
+  - icon: "📡"
+    text: "Veille tech (TDD, API, sécurité, IA)"
+  - icon: "🎲"
+    text: "Jeux de rôle & création de décors"
+  - icon: "🎵"
+    text: "Musique & sculpture"
 
 profile:
   quote: "Il y a un point commun entre un escape game bien conçu et un logiciel réussi : tout doit s'assembler avec élégance."
