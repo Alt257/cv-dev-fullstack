@@ -1,0 +1,15 @@
+<!-- Compétences techniques -->
+<section aria-label="Compétences techniques">
+    <div class="section-title">Compétences Techniques</div>
+
+    {% for skill in skills %}
+
+        <div class="sidebar-label">{{ skill.category }}</div>
+        <div class="pill-group">
+
+            {% for item in skill.items %}
+                <span class="pill">{{ item }}</span>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</section>
