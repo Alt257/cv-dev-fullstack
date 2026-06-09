@@ -15,4 +15,4 @@ $twig = new Environment($loader, [
     'debug' => true,
 ]);
 
-echo $twig->render('cv.html.twig', $data);
+echo $twig->render('cv/index.html.twig', $data);

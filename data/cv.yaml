@@ -135,13 +135,14 @@ volunteering:
       - "Programmation et développement d'électronique embarqué"
 
 education:
-  - degree: "Diplôme d'État français : Concepteur Développeur d'Applications (Bac+4/Master1)"
+  - degree: "Certification professionnelle avancée – Concepteur Développeur d’Applications"
     date: "2023"
-    school: "ENI École Informatique"
+    school: "Ministère du Travail"
     location: "Nancy, France"
-    note: "Équivalence québécoise : Baccalauréat universitaire en informatique de gestion / génie logiciel."
+    note: "RNCP niveau 6"
 
-  - degree: "Licence Mathématiques & Informatique"
+  - degree: "Diplôme universitaire de 1er cycle (BAC) – Mathématiques & Informatique"
     date: "2012"
     school: "Université de Lorraine"
     location: "Nancy, France"
+    note: "Licence Math/Info"
