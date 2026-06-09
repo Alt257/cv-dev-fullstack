@@ -1,0 +1,10 @@
+{# Texte avec un lien si disponible #}
+
+{% if href is not null %}
+    <a href="{{ herf }}">
+        {{ text }}
+    </a>
+
+{% else %}
+    {{ text }}
+{% endif %}

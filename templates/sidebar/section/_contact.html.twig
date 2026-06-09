@@ -12,15 +12,10 @@
                     iconImage: item.iconImage,
                 } only %}
 
-                {# Texte avec un lien si disponible #}
-                {% if item.href is not null %}
-                    <a href="{{ item.herf }}">
-                        {{ item.text }}
-                    </a>
-
-                {% else %}
-                    {{ item.text }}
-                {% endif %}
+                {% include 'shared/_text.html.twig' with {
+                    href: item.href,
+                    text: item.text,
+                } only %}
 
             </li>
         {% endfor %}
