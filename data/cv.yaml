@@ -95,9 +95,9 @@ interests:
 
 profile:
   quote: "Il y a un point commun entre un escape game bien conçu et un logiciel réussi : tout doit s'assembler avec élégance."
-  content: >
+  content: |
     C'est cette logique qui guide mon travail.
-    Développeur full stack formé à la fois à l’université (Math/Info) et par une certification professionnelle avancée (CDA – niveau BAC+3), spécialisé en conception et développement d’applications web et mobiles.
+    Développeur full stack formé à la fois à l’université (Math/Info) et par une certification professionnelle avancée (CDA), spécialisé en conception et développement d’applications **web** et **mobiles**.
 
 experiences:
   - title: "Développeur Full Stack Web & Mobile — Indépendant"
