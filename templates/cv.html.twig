@@ -1,0 +1,156 @@
+{% extends 'base.html.twig' %}
+
+
+{% block main %}
+    <div class="page-wrapper">
+        <div class="cv-page">
+
+
+            {% include '_sidebar.html.twig' %}
+
+            <!-- ══════════════════════════════════
+                 CONTENU PRINCIPAL
+            ══════════════════════════════════ -->
+            <main class="main-content">
+                <h1>Développeur Full Stack</h1>
+
+                <!-- Profil -->
+                <section aria-label="Profil">
+                    <div class="section-title-main">Profil</div>
+                    <div class="profil-box">
+                        <blockquote>
+                            Il y a un point commun entre un escape game bien conçu et un <br>
+                            logiciel réussi : tout doit s'assembler avec élégance.
+                        </blockquote>
+                        C'est cette logique qui guide mon travail
+                        de développeur full stack. J'ai de l'expérience en <b>Symfony</b>, <b>Flutter</b>,
+                        <b>API REST</b> et aujourd'hui, je me forme sur <b>.NET Core</b> et <b>Angular</b>.
+                        Curieux, collaboratif et attaché aux bonnes pratiques (<b>TDD</b>, <b>SOLID</b>, <b>CI/CD</b>),
+                        je
+                        m'investis dans des
+                        projets où la qualité du code rime avec l'impact réel sur les utilisateurs.
+                        Ma vraie force : percevoir les connexions entre des éléments disparates et
+                        concevoir comment les faire interagir de manière innovante et ingénieuse.
+                    </div>
+                </section>
+
+                <!-- Expériences professionnelles -->
+                <section aria-label="Expériences professionnelles">
+                    <div class="section-title-main">Expériences Professionnelles</div>
+
+                    <!-- Exp 1 -->
+                    <article class="exp-block">
+                        <div class="exp-header">
+                            <h2 class="exp-title">Développeur Full Stack Web &amp; Mobile — Indépendant</h2>
+                            <span class="exp-date">Octobre 2024 – présent</span>
+                        </div>
+                        <div class="exp-company">La Bonne Idée | Montréal, QC</div>
+                        <ul class="exp-bullets" style="list-style:none;">
+                            <li class="exp-bullet">Développement d'applications web et mobiles sur mesure</li>
+                            <li class="exp-bullet">Stack principale : Symfony (API REST), Flutter (frontend)</li>
+                            <li class="exp-bullet">Mise en place de pipelines CI/CD, déploiement Docker, gestion
+                                Linux/SSH
+                            </li>
+                            <li class="exp-bullet">Application systématique du TDD et des principes SOLID pour assurer
+                                la
+                                maintenabilité et la testabilité
+                            </li>
+                            <li class="exp-bullet">Collaboration directe avec les clients pour la conception
+                                fonctionnelle
+                                et UX
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Exp 2 -->
+                    <article class="exp-block">
+                        <div class="exp-header">
+                            <h2 class="exp-title">Développeur d'Applications Mobiles</h2>
+                            <span class="exp-date">Mars 2025 - Septembre 2025</span>
+                        </div>
+                        <div class="exp-company">SynapsIA | Metz (France)</div>
+                        <ul class="exp-bullets" style="list-style:none;">
+                            <li class="exp-bullet">Développement d'une application mobile Flutter dans un contexte
+                                d'intelligence artificielle
+                            </li>
+                            <li class="exp-bullet">Intégration d'API REST et gestion d'états complexes (BLoC)</li>
+                            <li class="exp-bullet">Contribution à l'architecture technique et aux revues de code</li>
+                            <li class="exp-bullet">Amélioration des performances et de la sécurité d'autres applications
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Exp 3 -->
+                    <article class="exp-block">
+                        <div class="exp-header">
+                            <h2 class="exp-title">Développeur Web Full Stack — Stage</h2>
+                            <span class="exp-date">Mai 2023 - Juin 2023</span>
+                        </div>
+                        <div class="exp-company">Aprem'Jazz | Nancy, France</div>
+                        <ul class="exp-bullets" style="list-style:none;">
+                            <li class="exp-bullet">Conception et développement du site web de l'association culturelle
+                                musicale
+                            </li>
+                            <li class="exp-bullet">Stack : Symfony (backend PHP), JavaScript (frontend), MySQL</li>
+                            <li class="exp-bullet">Conception de la base de données, développement des fonctionnalités
+                                métier
+                            </li>
+                            <li class="exp-bullet">Livraison autonome dans les délais impartis</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- Bénévolat -->
+                <section aria-label="Bénévolat">
+                    <div class="section-title-main">Bénévolat</div>
+
+                    <article class="exp-block">
+                        <div class="exp-header">
+                            <h2 class="exp-title">Concepteur de décors &amp; expériences interactives</h2>
+                            <span class="exp-date">2012 - 2019</span>
+                        </div>
+                        <div class="exp-company">Jeux d'évasion &amp; projets créatifs collaboratifs | France</div>
+                        <ul class="exp-bullets" style="list-style:none;">
+                            <li class="exp-bullet">Conception et réalisation de décors interactifs et immersifs pour des
+                                jeux d'évasion associatifs
+                            </li>
+                            <li class="exp-bullet">Application des mêmes méthodes de planification et de conception
+                                qu'en
+                                développement logiciel
+                            </li>
+                            <li class="exp-bullet">Programmation et développement d'électronique embarqué</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- Formation -->
+                <section aria-label="Formation">
+                    <div class="section-title-main">Formation</div>
+
+                    <div class="formation-block">
+                        <div class="exp-header">
+                            <span class="formation-degree">Diplôme d'État français : Concepteur Développeur d'Applications (Bac+4/Master1)</span>
+                            <span class="exp-date">2023</span>
+                        </div>
+                        <div class="formation-school">ENI École Informatique | Nancy, France</div>
+                        <div class="formation-note">
+                            Équivalence québécoise : Baccalauréat universitaire en informatique de gestion / génie
+                            logiciel
+                            (4 ans d'études supérieures).
+                        </div>
+                    </div>
+
+                    <div class="formation-block">
+                        <div class="exp-header">
+                            <span class="formation-degree">Licence Mathématiques &amp; Informatique</span>
+                            <span class="exp-date">2012</span>
+                        </div>
+                        <div class="formation-school">Université de Lorraine | Nancy, France</div>
+                    </div>
+                </section>
+
+            </main>
+
+        </div><!-- .cv-page -->
+    </div><!-- .page-wrapper -->
+{% endblock %}

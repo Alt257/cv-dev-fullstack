@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="CV de Benoît Rataux – Développeur Full Stack Web & Mobile (.NET Core, Angular, Flutter)"
+          name="description"/>
+    <title>CV – Benoît Rataux | Développeur Full Stack</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet"/>
+    <link href="assets/icons/stamp-on-document.png" rel="icon">
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- Boutons impression -->
+<div class="print-buttons-wrapper">
+    <button class="print-btn no-print" id="print-btn" onclick="printCV()">
+        <span aria-hidden="true">🖨️ </span>Sauvegarder en PDF
+    </button>
+    <button class="print-btn no-print" id="print-bw-btn" onclick="printCVinBlackAndWhite()">
+        <span aria-hidden="true">🖨️ </span>Imprimer en noir et blanc
+    </button>
+    <div class="print-hint no-print">
+        <span aria-hidden="true">💡 </span>Astuce : utilisez Ctrl+P pour la version optimisée pour imprimer sur papier »
+    </div>
+</div>
+
+{% block main %}{% endblock %}
+
+<script>
+    function printCV() {
+        document.body.classList.remove('print-bw');
+        window.print();
+    }
+
+    function printCVinBlackAndWhite() {
+        document.body.classList.add('print-bw');
+        window.print();
+    }
+
+    document.addEventListener('keydown', function (e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+            e.preventDefault();
+            printCVinBlackAndWhite();
+        }
+    });
+</script>
+
+</body>
+</html>
