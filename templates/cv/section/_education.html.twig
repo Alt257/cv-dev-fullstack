@@ -1,0 +1,36 @@
+{#
+Composant : Section Formation
+
+Variables attendues :
+- education : array<int, array{
+    degree: string,
+    date: string,
+    school: string,
+    location: string,
+    note: string|null
+  }>
+    Liste des formations à afficher.
+
+Exemple d’appel :
+{% include 'cv/section/_education.html.twig' with {
+    education: cv.education,
+} %}
+#}
+
+<!-- Formation -->
+<section aria-label="Formation">
+    <div class="section-title-main">Formation</div>
+
+    {% for item in education %}
+        <div class="formation-block">
+            <div class="exp-header">
+                <span class="formation-degree">{{ item.degree }}</span>
+                <span class="exp-date">{{ item.date }}</span>
+            </div>
+            <div class="formation-school">{{ item.school }} | {{ item.location }}</div>
+            {% if item.note is not empty %}
+                <div class="formation-note">{{ item.note }}</div>
+            {% endif %}
+        </div>
+    {% endfor %}
+</section>

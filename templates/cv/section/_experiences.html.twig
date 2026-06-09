@@ -1,0 +1,38 @@
+{#
+Composant : Section Expériences professionnelles
+
+Variables attendues :
+- experiences : array<int, array{
+    title: string,
+    date: string,
+    company: string,
+    location: string,
+    bullets: array<int, string>
+  }>
+    Liste des expériences professionnelles à afficher.
+
+Exemple d’appel :
+{% include 'cv/section/_experiences.html.twig' with {
+    experiences: cv.experiences,
+} %}
+#}
+
+<!-- Expériences professionnelles -->
+<section aria-label="Expériences professionnelles">
+    <div class="section-title-main">Expériences Professionnelles</div>
+
+    {% for experience in experiences %}
+        <article class="exp-block">
+            <div class="exp-header">
+                <h2 class="exp-title">{{ experience.title }}</h2>
+                <span class="exp-date">{{ experience.date }}</span>
+            </div>
+            <div class="exp-company">{{ experience.company }} | {{ experience.location }}</div>
+            <ul class="exp-bullets" style="list-style:none;">
+                {% for bullet in experience.bullets %}
+                    <li class="exp-bullet">{{ bullet }}</li>
+                {% endfor %}
+            </ul>
+        </article>
+    {% endfor %}
+</section>

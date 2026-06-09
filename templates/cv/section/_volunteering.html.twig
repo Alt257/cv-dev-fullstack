@@ -1,0 +1,38 @@
+{#
+Composant : Section Bénévolat
+
+Variables attendues :
+- volunteering : array<int, array{
+    title: string,
+    date: string,
+    company: string,
+    location: string,
+    bullets: array<int, string>
+  }>
+    Liste des expériences de bénévolat à afficher.
+
+Exemple d’appel :
+{% include 'cv/section/_volunteering.html.twig' with {
+    volunteering: cv.volunteering,
+} %}
+#}
+
+<!-- Bénévolat -->
+<section aria-label="Bénévolat">
+    <div class="section-title-main">Bénévolat</div>
+
+    {% for volunteer in volunteering %}
+        <article class="exp-block">
+            <div class="exp-header">
+                <h2 class="exp-title">{{ volunteer.title }}</h2>
+                <span class="exp-date">{{ volunteer.date }}</span>
+            </div>
+            <div class="exp-company">{{ volunteer.company }} | {{ volunteer.location }}</div>
+            <ul class="exp-bullets" style="list-style:none;">
+                {% for bullet in volunteer.bullets %}
+                    <li class="exp-bullet">{{ bullet }}</li>
+                {% endfor %}
+            </ul>
+        </article>
+    {% endfor %}
+</section>
