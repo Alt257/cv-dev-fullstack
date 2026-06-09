@@ -1,0 +1,13 @@
+<!-- Aptitudes -->
+<section aria-label="Aptitudes">
+    <div class="section-title">Aptitudes</div>
+    <ul class="aptitude-list" style="list-style:none;">
+
+        {% for item in aptitudes %}
+            <li class="aptitude-item">
+                <div aria-hidden="true" class="aptitude-dot"></div>
+                {{ item }}
+            </li>
+        {% endfor %}
+    </ul>
+</section>
