@@ -1,3 +1,31 @@
+{#
+Composant : Section Intérêts
+
+Rôle :
+Affiche les centres d’intérêt dans la sidebar.
+Chaque intérêt est affiché avec une icône et un texte.
+
+Variables attendues :
+- interests : array
+    Liste des centres d’intérêt.
+
+    Chaque élément peut contenir :
+    - item.icon : string|null
+        Icône textuelle ou emoji.
+
+    - item.iconImage : string|null
+        Chemin ou URL vers une image utilisée comme icône.
+
+    - item.text : string
+        Texte du centre d’intérêt.
+
+    - item.href : string|null
+        Lien optionnel associé au centre d’intérêt.
+
+Exemple d’appel :
+{% include 'sidebar/section/_interests.html.twig' %}
+#}
+
 <!-- Intérêts -->
 <section aria-label="Intérêts">
     <div class="section-title">Intérêts</div>

@@ -1,6 +1,38 @@
-{# Élément de liste avec :
-    - une icone
-    - le texte avec un lien si disponible
+{#
+Composant : Élément de liste avec icône et texte
+
+Rôle :
+Affiche un élément composé :
+- d’une icône ou image,
+- d’un texte,
+- éventuellement d’un lien.
+
+Variables attendues :
+- itemType : string
+    Préfixe utilisé pour construire la classe CSS de l’icône.
+    Exemple : `contact`, `status`, `interest`.
+
+- item : object|array
+    Élément à afficher.
+
+    Propriétés utilisées :
+    - item.icon : string|null
+        Icône textuelle ou emoji.
+
+    - item.iconImage : string|null
+        Chemin ou URL vers une image utilisée comme icône.
+
+    - item.text : string
+        Texte principal affiché.
+
+    - item.href : string|null
+        URL optionnelle. Si elle existe, le texte devient un lien.
+
+Exemple d’appel :
+{% include 'shared/_list-item.html.twig' with {
+    itemType: 'contact',
+    item: item,
+} only %}
 #}
 
 {% include 'shared/_icon.html.twig' with {

@@ -1,4 +1,28 @@
-{# Choix de la méthode pour afficher l'icone #}
+{#
+Composant : Icône
+
+Rôle :
+Affiche une icône sous forme de texte/emoji ou sous forme d’image.
+
+Variables attendues :
+- class : string
+    Classe CSS appliquée à l’élément affiché.
+
+- icon : string|null
+    Icône textuelle ou emoji.
+    Si cette variable est renseignée, elle est affichée dans un <span>.
+
+- iconImage : string|null
+    URL ou chemin vers une image.
+    Utilisée uniquement si `icon` est null.
+
+Exemple d’appel :
+{% include 'shared/_icon.html.twig' with {
+    class: 'contact-icon',
+    icon: item.icon,
+    iconImage: item.iconImage,
+} only %}
+#}
 
 {% if icon is not null %}
     <span aria-hidden="true"

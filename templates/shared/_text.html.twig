@@ -1,7 +1,27 @@
-{# Texte avec un lien si disponible #}
+{#
+Composant : Texte avec lien optionnel
+
+Rôle :
+Affiche un texte simple ou un lien cliquable si une URL est fournie.
+
+Variables attendues :
+- text : string
+    Texte à afficher.
+
+- href : string|null
+    URL du lien.
+    Si cette variable est renseignée, le texte est affiché dans une balise <a>.
+    Si elle est null, seul le texte est affiché.
+
+Exemple d’appel :
+{% include 'shared/_text.html.twig' with {
+    href: item.href,
+    text: item.text,
+} only %}
+#}
 
 {% if href is not null %}
-    <a href="{{ herf }}">
+    <a href="{{ href }}">
         {{ text }}
     </a>
 

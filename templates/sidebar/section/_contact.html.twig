@@ -1,3 +1,36 @@
+{#
+Composant : Section Contact
+
+Rôle :
+Affiche les informations de contact dans la sidebar.
+Chaque élément est rendu avec une icône et un texte, éventuellement cliquable.
+
+Variables attendues :
+- contact : array
+    Liste des moyens de contact.
+
+    Chaque élément peut contenir :
+    - item.type : string|null
+        Type de contact.
+        Exemple : `location`, `email`, `linkedin`, `github`.
+
+    - item.icon : string|null
+        Icône textuelle ou emoji.
+
+    - item.iconImage : string|null
+        Chemin ou URL vers une image utilisée comme icône.
+
+    - item.text : string
+        Texte affiché.
+
+    - item.href : string|null
+        Lien optionnel.
+        Exemple : `mailto:...` ou URL de profil.
+
+Exemple d’appel :
+{% include 'sidebar/section/_contact.html.twig' %}
+#}
+
 <!-- Contact -->
 <section aria-label="Contact">
     <div class="section-title">Contact</div>

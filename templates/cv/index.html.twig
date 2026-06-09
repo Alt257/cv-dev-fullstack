@@ -14,7 +14,10 @@
             <main class="main-content">
                 <h1>Développeur Full Stack</h1>
 
-                {% include 'cv/section/_profile.html.twig' %}
+                {% include 'cv/section/_profile.html.twig' with {
+                    quote: profile.quote,
+                    text: profile.content,
+                } %}
 
                 <!-- Expériences professionnelles -->
                 <section aria-label="Expériences professionnelles">

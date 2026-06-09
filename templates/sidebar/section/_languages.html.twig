@@ -1,3 +1,28 @@
+{#
+Composant : Section Langues
+
+Rôle :
+Affiche les langues parlées avec un drapeau, un nom et un niveau.
+
+Variables attendues :
+- languages : array
+    Liste des langues à afficher.
+
+    Chaque élément contient :
+    - item.flag : string
+        Drapeau ou icône de la langue.
+
+    - item.name : string
+        Nom de la langue.
+
+    - item.level : string
+        Niveau de maîtrise.
+        Exemple : `Natif`, `Professionnel (B2)`.
+
+Exemple d’appel :
+{% include 'sidebar/section/_languages.html.twig' %}
+#}
+
 <!-- Langues -->
 <section aria-label="Langues">
     <div class="section-title">Langues</div>

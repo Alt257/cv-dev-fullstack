@@ -1,3 +1,49 @@
+{#
+Composant : Sidebar du CV
+
+Rôle :
+Affiche la colonne latérale gauche du CV :
+- identité,
+- statuts,
+- contact,
+- compétences,
+- langues,
+- aptitudes,
+- centres d’intérêt.
+
+Variables attendues :
+- identity : object|array
+    Informations principales d’identité.
+
+    Propriétés utilisées :
+    - identity.firstname : string
+        Prénom affiché dans l’en-tête de la sidebar.
+
+    - identity.lastname : string
+        Nom affiché dans l’en-tête de la sidebar.
+
+- status : array
+    Liste des statuts affichés par `sidebar/section/_status.html.twig`.
+
+- contact : array
+    Liste des informations de contact affichées par `sidebar/section/_contact.html.twig`.
+
+- skills : array
+    Liste des compétences affichées par `sidebar/section/_skills.html.twig`.
+
+- languages : array
+    Liste des langues affichées par `sidebar/section/_languages.html.twig`.
+
+- aptitudes : array
+    Liste des aptitudes affichées par `sidebar/section/_aptitudes.html.twig`.
+
+- interests : array
+    Liste des centres d’intérêt affichés par `sidebar/section/_interests.html.twig`.
+
+Exemple d’appel :
+{% include 'sidebar/_sidebar.html.twig' %}
+#}
+
 <!-- ══════════════════════════════════
                  SIDEBAR GAUCHE
             ══════════════════════════════════ -->

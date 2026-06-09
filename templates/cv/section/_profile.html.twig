@@ -1,12 +1,34 @@
+{#
+Composant : Section Profil
+
+Variables attendues :
+- quote : string|null
+    Citation affichée dans un bloc <blockquote>.
+    Si la valeur est null, la citation n’est pas affichée.
+
+- text : string|null
+    Texte principal du profil.
+    Le contenu est interprété comme du Markdown grâce au filtre `markdown`.
+
+Exemple d’appel :
+{% include 'cv/section/_profile.html.twig' with {
+    quote: profile.quote,
+    text: profile.content,
+} %}
+#}
+
 <!-- Profil -->
 <section aria-label="Profil">
     <div class="section-title-main">Profil</div>
     <div class="profil-box">
-        <blockquote>
-            {{ profile.quote }}
-        </blockquote>
 
-        {{ profile.content | markdown }}
+        {% if quote is not null %}
+            <blockquote>
+                {{ quote }}
+            </blockquote>
+        {% endif %}
+
+        {{ text | markdown }}
         {#        C'est cette logique qui guide mon travail #}
         {#        de développeur full stack. J'ai de l'expérience en <b>Symfony</b>, <b>Flutter</b>, #}
         {#        <b>API REST</b> et aujourd'hui, je me forme sur <b>.NET Core</b> et <b>Angular</b>. #}

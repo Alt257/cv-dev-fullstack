@@ -1,3 +1,32 @@
+{#
+Composant : Section Statuts
+
+Rôle :
+Affiche la liste des statuts importants du CV.
+Exemple : disponibilité, permis de travail, mobilité, etc.
+
+Variables attendues :
+- status : array
+    Liste des statuts à afficher.
+
+    Chaque élément peut contenir :
+    - item.icon : string|null
+        Icône textuelle ou emoji.
+
+    - item.iconImage : string|null
+        Chemin ou URL vers une image utilisée comme icône.
+
+    - item.text : string
+        Texte du statut.
+
+    - item.href : string|null
+        Lien optionnel associé au statut.
+
+Exemple d’appel :
+{% include 'sidebar/section/_status.html.twig' %}
+#}
+
+<!-- Status -->
 <section aria-label="Statuts">
     <ul class="status-list" style="list-style:none;">
         {% for item in status %}

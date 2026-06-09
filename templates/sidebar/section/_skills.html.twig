@@ -1,3 +1,26 @@
+{#
+Composant : Section Compétences techniques
+
+Rôle :
+Affiche les compétences techniques groupées par catégorie.
+Chaque compétence est affichée sous forme de badge.
+
+Variables attendues :
+- skills : array
+    Liste des catégories de compétences.
+
+    Chaque catégorie contient :
+    - skill.category : string
+        Nom de la catégorie.
+        Exemple : `Langages`, `Frameworks & Libs`, `Outils & DevOps`.
+
+    - skill.items : array<string>
+        Liste des compétences de cette catégorie.
+
+Exemple d’appel :
+{% include 'sidebar/section/_skills.html.twig' %}
+#}
+
 <!-- Compétences techniques -->
 <section aria-label="Compétences techniques">
     <div class="section-title">Compétences Techniques</div>
