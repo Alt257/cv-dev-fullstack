@@ -1,0 +1,143 @@
+identity:
+  firstname: "Benoît"
+  lastname: "Rataux"
+  title: "Développeur Full Stack"
+  description: "CV de Benoît Rataux – Développeur Full Stack Web & Mobile (.NET Core, Angular, Flutter)"
+
+status:
+  - icon: "assets/stamp-on-document.png"
+    alt: "approuvé"
+    text: "Permis de travail Ouvert (2028)"
+  - icon: "assets/accept.png"
+    alt: "Disponible"
+    text: "Disponible immédiatement"
+
+contact:
+  - type: "location"
+    icon: "📍"
+    text: "Montréal, QC, Canada"
+  - type: "email"
+    icon: "✉️"
+    text: "benoit.rataux@gmail.com"
+    href: "mailto:benoit.rataux@gmail.com"
+  - type: "linkedin"
+    iconImage: "https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8"
+    text: "linkedin.com/in/benoit-rataux"
+    href: "https://www.linkedin.com/in/benoit-rataux"
+  - type: "github"
+    iconImage: "https://github.com/fluidicon.png"
+    text: "github.com/Alt257"
+    href: "https://github.com/Alt257"
+
+skills:
+  - category: "Langages"
+    items:
+      - "C#"
+      - "TypeScript"
+      - "Dart"
+      - "JavaScript"
+      - "PHP"
+      - "Java"
+      - "SQL"
+      - "HTML/CSS"
+
+  - category: "Frameworks & Libs"
+    items:
+      - ".NET Core"
+      - "Angular"
+      - "Flutter"
+      - "Ionic"
+      - "Symfony"
+
+  - category: "Outils & DevOps"
+    items:
+      - "Docker"
+      - "Git"
+      - "Linux"
+      - "Apache"
+      - "SSH"
+      - "REST API"
+
+  - category: "Pratiques"
+    items:
+      - "TDD"
+      - "SOLID"
+      - "Design Patterns"
+      - "Tests unitaires"
+      - "Tests d'intégration"
+      - "CI/CD"
+
+languages:
+  - flag: "🇫🇷"
+    name: "Français"
+    level: "Natif"
+  - flag: "🇬🇧"
+    name: "Anglais"
+    level: "Professionnel (B2)"
+
+aptitudes:
+  - "Travail en équipe & collaboration"
+  - "Autonomie & prise d'initiative"
+  - "Rigueur & sens du détail"
+  - "Communication claire"
+  - "Adaptabilité & curiosité"
+  - "Pensée systémique & architecture"
+
+interests:
+  - "🎭 Théâtre d'improvisation (troupe K.A.O.S.)"
+  - "📡 Veille tech (TDD, API, sécurité, IA)"
+  - "🎲 Jeux de rôle & création de décors"
+  - "🎵 Musique & sculpture"
+
+profile:
+  quote: "Il y a un point commun entre un escape game bien conçu et un logiciel réussi : tout doit s'assembler avec élégance."
+  content: >
+    C'est cette logique qui guide mon travail de développeur full stack.
+    J'ai de l'expérience en Symfony, Flutter, API REST et aujourd'hui,
+    je me forme sur .NET Core et Angular. Curieux, collaboratif et attaché
+    aux bonnes pratiques, je m'investis dans des projets où la qualité du code
+    rime avec l'impact réel sur les utilisateurs.
+
+experiences:
+  - title: "Développeur Full Stack Web & Mobile — Indépendant"
+    date: "Octobre 2024 – présent"
+    company: "La Bonne Idée"
+    location: "Montréal, QC"
+    bullets:
+      - "Développement d'applications web et mobiles sur mesure"
+      - "Stack principale : Symfony (API REST), Flutter (frontend)"
+      - "Mise en place de pipelines CI/CD, déploiement Docker, gestion Linux/SSH"
+      - "Application systématique du TDD et des principes SOLID"
+      - "Collaboration directe avec les clients pour la conception fonctionnelle et UX"
+
+  - title: "Développeur d'Applications Mobiles"
+    date: "Mars 2025 - Septembre 2025"
+    company: "SynapsIA"
+    location: "Metz, France"
+    bullets:
+      - "Développement d'une application mobile Flutter dans un contexte d'intelligence artificielle"
+      - "Intégration d'API REST et gestion d'états complexes (BLoC)"
+      - "Contribution à l'architecture technique et aux revues de code"
+      - "Amélioration des performances et de la sécurité d'autres applications"
+
+volunteering:
+  - title: "Concepteur de décors & expériences interactives"
+    date: "2012 - 2019"
+    company: "Jeux d'évasion & projets créatifs collaboratifs"
+    location: "France"
+    bullets:
+      - "Conception et réalisation de décors interactifs et immersifs"
+      - "Application des mêmes méthodes de planification et de conception qu'en développement logiciel"
+      - "Programmation et développement d'électronique embarqué"
+
+education:
+  - degree: "Diplôme d'État français : Concepteur Développeur d'Applications (Bac+4/Master1)"
+    date: "2023"
+    school: "ENI École Informatique"
+    location: "Nancy, France"
+    note: "Équivalence québécoise : Baccalauréat universitaire en informatique de gestion / génie logiciel."
+
+  - degree: "Licence Mathématiques & Informatique"
+    date: "2012"
+    school: "Université de Lorraine"
+    location: "Nancy, France"
