@@ -1,6 +1,7 @@
 {
     "require": {
         "twig/twig": "^3.27",
-        "symfony/yaml": "^8.1"
+        "symfony/yaml": "^8.1",
+        "league/commonmark": "^2.8"
     }
 }
