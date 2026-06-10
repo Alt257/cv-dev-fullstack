@@ -429,21 +429,22 @@ blockquote::after {
   font-size: 10px;
 }
 
-.exp-block ul {
+.exp-note ul {
+  margin-top: 6px;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
 
-.exp-block li {
+.exp-note li {
   color: var(--text-body);
   line-height: 1.5;
   padding-left: 14px;
   position: relative;
 }
 
-.exp-block li::before {
+.exp-note li::before {
   content: '•';
   position: absolute;
   left: 0;
