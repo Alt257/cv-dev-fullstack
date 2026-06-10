@@ -24,10 +24,21 @@ Exemple d’appel :
     {% for exp in volunteering %}
         <article class="exp-block">
             <div class="exp-header">
-                <h3 class="exp-title">{{ exp.title }}</h3>
+                <h3 class="exp-title">
+                    {% include 'shared/_text.html.twig' with {
+                        text: exp.title,
+                        href: exp.title_href,
+                    } only %}
+                </h3>
                 <span class="exp-date">{{ exp.date }}</span>
             </div>
-            <div class="exp-company">{{ exp.company }} | {{ exp.location }}</div>
+
+            <div class="exp-company">
+                {% include 'shared/_text.html.twig' with {
+                    text: exp.company,
+                    href: exp.company_href,
+                } only %}
+                | {{ exp.location }}</div>
             <div class="exp-note">
                 {{ exp.note | markdown }}
             </div>
