@@ -30,7 +30,7 @@ Exemple d’appel :
             <div class="exp-company">{{ volunteer.company }} | {{ volunteer.location }}</div>
             <ul class="exp-bullets" style="list-style:none;">
                 {% for bullet in volunteer.bullets %}
-                    <li class="exp-bullet">{{ bullet }}</li>
+                    <li class="exp-bullet">{{ bullet | markdown }}</li>
                 {% endfor %}
             </ul>
         </article>

@@ -30,7 +30,7 @@ Exemple d’appel :
             <div class="exp-company">{{ experience.company }} | {{ experience.location }}</div>
             <ul class="exp-bullets" style="list-style:none;">
                 {% for bullet in experience.bullets %}
-                    <li class="exp-bullet">{{ bullet }}</li>
+                    <li class="exp-bullet">{{ bullet | markdown }}</li>
                 {% endfor %}
             </ul>
         </article>

@@ -29,7 +29,7 @@ Exemple d’appel :
             </div>
             <div class="formation-school">{{ item.school }} | {{ item.location }}</div>
             {% if item.note is not empty %}
-                <div class="formation-note">{{ item.note }}</div>
+                <div class="formation-note">{{ item.note | markdown }}</div>
             {% endif %}
         </div>
     {% endfor %}
