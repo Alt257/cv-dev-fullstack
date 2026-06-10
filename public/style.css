@@ -23,6 +23,7 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --transition: 150ms ease;
+  --page-padding-top: 20px;
 }
 
 /* ── Reset ──────────────────────────────────────────────────── */
@@ -166,7 +167,7 @@ blockquote::after {
 .sidebar {
   background: var(--sidebar-bg);
   color: var(--text-light);
-  padding: 28px 18px 24px;
+  padding: var(--page-padding-top) 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -355,7 +356,7 @@ blockquote::after {
 
 /* ── Contenu principal ──────────────────────────────────────── */
 .main-content {
-  padding: 12px 26px 12px;
+  padding: var(--page-padding-top) 22px;
   display: flex;
   flex-direction: column;
   gap: 13px;
@@ -566,7 +567,7 @@ blockquote::after {
     font-size: 12px;
   }
 
-  .exp-bullet {
+  .exp-note {
     font-size: 12px;
   }
 
@@ -598,7 +599,6 @@ blockquote::after {
   }
 
   .sidebar {
-    padding: 20px 16px;
     gap: 14px;
   }
 
@@ -645,8 +645,8 @@ blockquote::after {
   html,
   body {
     --print-page-margin: 0;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     background: none !important;
     font-size: 9px !important;
     width: 100%;
@@ -693,10 +693,9 @@ blockquote::after {
   }
 
   .sidebar {
-    padding: 26px 22px 24px !important;
-    gap: 20px !important;
     border-radius: 0 !important;
     align-self: stretch !important;
+    gap: 12px !important;
   }
 
   .sidebar-name {
@@ -727,8 +726,8 @@ blockquote::after {
   }
 
   .main-content {
-    padding: 26px 22px 24px !important;
-    gap: 12px !important;
+    padding: var(--page-padding-top) 18px !important;
+    gap: 10px !important;
   }
 
   blockquote {
@@ -751,7 +750,7 @@ blockquote::after {
     font-size: 11px !important;
   }
 
-  .exp-bullet {
+  .exp-note {
     font-size: 11px !important;
   }
 
@@ -765,67 +764,76 @@ blockquote::after {
 
 
   /* ── Impression Noir et Blanc ───────────────────────────────── */
-  body.print-bw {
-    padding: 5mm 5mm !important;
-    color: black;
+  .print-bw {
+    padding: 0 5mm !important;
+    color: black !important;
     background: white;
   }
 
-  body.print-bw .main-content {
-    gap: 12px !important;
-  }
-
-  body.print-bw .section-title-main {
-    font-size: 14px !important;
-    border-bottom: none !important;
-    margin-bottom: 6px !important;
-  }
-
-  body.print-bw .profil-box {
-    padding: 0 !important;
-  }
-
-  body.print-bw blockquote {
-    font-size: 12px !important;
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    margin-bottom: 8px !important;
-  }
-
-  body.print-bw .side {
-    gap: 22px !important;
-  }
-
-  body.print-bw .sidebar-label {
-    font-weight: 700 !important;
-    margin-top: 12px !important;
-  }
-
-  body.print-bw .section-title {
-    font-weight: 900 !important;
-    border-bottom: none !important;
-    margin-bottom: 1px !important;
-  }
-
-  body.print-bw .pill-group {
-    gap: 8px !important;
-  }
-
-  body.print-bw .pill {
-    padding: 0 !important;
-    line-height: 1.2 !important;
-  }
-
-  body.print-bw * {
+  .print-bw * {
     color: black !important;
     background: white !important;
     box-shadow: none !important;
     border: none !important;
   }
 
-  body.print-bw .cv-page::after {
+  .print-bw .cv-page::after {
     display: none !important;
     background: none !important;
     height: 0 !important;
+  }
+
+  .print-bw .sidebar {
+    gap: 22px !important;
+  }
+
+  .print-bw .dot-pattern {
+    display: none !important;
+  }
+
+  .print-bw .section-title {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    border-bottom: none !important;
+    margin-bottom: 1px !important;
+  }
+
+  .print-bw .sidebar-label {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    margin-top: 12px !important;
+  }
+
+  .print-bw .pill-group {
+    gap: 8px !important;
+  }
+
+  .print-bw .pill {
+    padding: 0 !important;
+    line-height: 1.2 !important;
+  }
+
+  .print-bw .main-content {
+    gap: 12px !important;
+  }
+
+  .print-bw .section-title-main {
+    font-size: 14px !important;
+    border-bottom: none !important;
+    margin-bottom: 2px !important;
+  }
+
+  .print-bw .profil-box {
+    padding: 0 !important;
+  }
+
+  .print-bw blockquote {
+    font-size: 12px !important;
+    padding: 4px 8px !important;
+    margin: 0 !important;
+  }
+
+  .print-bw .exp-note li::before {
+    color: black !important;
   }
 }
