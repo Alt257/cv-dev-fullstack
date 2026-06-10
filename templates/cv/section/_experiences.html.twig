@@ -24,10 +24,22 @@ Exemple d’appel :
     {% for exp in experiences %}
         <article class="exp-block">
             <div class="exp-header">
-                <h2 class="exp-title">{{ exp.title }}</h2>
+                <h2 class="exp-title">
+                    {% include 'shared/_text.html.twig' with {
+                        text: exp.title,
+                        href: exp.title_href,
+                    } only %}
+                </h2>
                 <span class="exp-date">{{ exp.date }}</span>
             </div>
-            <div class="exp-company">{{ exp.company }} | {{ exp.location }}</div>
+
+            <div class="exp-company">
+                {% include 'shared/_text.html.twig' with {
+                    text: exp.company,
+                    href: exp.company_href,
+                } only %}
+                | {{ exp.location }}
+            </div>
             <div class="exp-note">
                 {{ exp.note | markdown }}
             </div>
