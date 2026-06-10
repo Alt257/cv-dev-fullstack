@@ -22,9 +22,9 @@ Exemple d’appel :
 
 {% if href is not null %}
     <a href="{{ href }}">
-        {{ text }}
+        {{ text | markdown }}
     </a>
 
 {% else %}
-    {{ text }}
+    {{ text | markdown }}
 {% endif %}
