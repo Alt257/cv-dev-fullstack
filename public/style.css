@@ -363,6 +363,15 @@ blockquote::after {
   background: var(--white);
 }
 
+.main-title {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  padding-bottom: 0;
+  margin-bottom: 2px;
+}
+
 /* Titres de section — main */
 .section-title-main {
   font-size: 12px;
