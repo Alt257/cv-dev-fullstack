@@ -160,7 +160,7 @@ volunteering:
 
 education:
   - degree: "Certification professionnelle – Concepteur Développeur d’Applications (CDA)"
-    href: "https://www.francecompetences.fr/recherche/rncp/37873/"
+    degree_href: "https://www.francecompetences.fr/recherche/rncp/37873/"
     date: "2023"
     school: "Ministère du Travail | ENI École"
     location: "Rennes, France"
