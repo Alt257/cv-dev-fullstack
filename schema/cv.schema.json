@@ -1,0 +1,376 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cv-benoit-rataux.local/schema/cv.schema.json",
+  "title": "CV YAML Schema",
+  "description": "Schéma JSON Schema 2020-12 pour valider le fichier data/cv.yaml.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "identity",
+    "status",
+    "contact",
+    "skills",
+    "languages",
+    "aptitudes",
+    "interests",
+    "profile",
+    "experiences",
+    "volunteering",
+    "education"
+  ],
+  "properties": {
+    "identity": {
+      "$ref": "#/$defs/identity"
+    },
+    "status": {
+      "type": "array",
+      "description": "Liste des statuts affichés dans la sidebar.",
+      "items": {
+        "$ref": "#/$defs/statusItem"
+      }
+    },
+    "contact": {
+      "type": "array",
+      "description": "Liste des moyens de contact.",
+      "items": {
+        "$ref": "#/$defs/contactItem"
+      }
+    },
+    "skills": {
+      "type": "array",
+      "description": "Liste des catégories de compétences.",
+      "items": {
+        "$ref": "#/$defs/skillCategory"
+      }
+    },
+    "languages": {
+      "type": "array",
+      "description": "Liste des langues parlées.",
+      "items": {
+        "$ref": "#/$defs/languageItem"
+      }
+    },
+    "aptitudes": {
+      "type": "array",
+      "description": "Liste des aptitudes personnelles.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interests": {
+      "type": "array",
+      "description": "Liste des centres d'intérêt.",
+      "items": {
+        "$ref": "#/$defs/iconTextItem"
+      }
+    },
+    "profile": {
+      "$ref": "#/$defs/profile"
+    },
+    "experiences": {
+      "type": "array",
+      "description": "Liste des expériences professionnelles.",
+      "items": {
+        "$ref": "#/$defs/timelineEntry"
+      }
+    },
+    "volunteering": {
+      "type": "array",
+      "description": "Liste des expériences bénévoles ou personnelles.",
+      "items": {
+        "$ref": "#/$defs/timelineEntry"
+      }
+    },
+    "education": {
+      "type": "array",
+      "description": "Liste des formations.",
+      "items": {
+        "$ref": "#/$defs/educationEntry"
+      }
+    }
+  },
+  "$defs": {
+    "identity": {
+      "type": "object",
+      "description": "Informations principales d'identité.",
+      "additionalProperties": false,
+      "required": [
+        "firstname",
+        "lastname",
+        "title",
+        "description"
+      ],
+      "properties": {
+        "firstname": {
+          "type": "string",
+          "description": "Prénom affiché sur le CV."
+        },
+        "lastname": {
+          "type": "string",
+          "description": "Nom affiché sur le CV."
+        },
+        "title": {
+          "type": "string",
+          "description": "Titre professionnel."
+        },
+        "description": {
+          "type": "string",
+          "description": "Description courte du CV."
+        }
+      }
+    },
+    "statusItem": {
+      "type": "object",
+      "description": "Élément de statut affiché dans la sidebar.",
+      "additionalProperties": false,
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "icon": {
+          "type": "string",
+          "description": "Icône textuelle ou emoji."
+        },
+        "iconImage": {
+          "type": "string",
+          "description": "Chemin local ou URL vers une image d'icône."
+        },
+        "text": {
+          "type": "string",
+          "description": "Texte du statut."
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "icon"
+          ]
+        },
+        {
+          "required": [
+            "iconImage"
+          ]
+        }
+      ]
+    },
+    "contactItem": {
+      "type": "object",
+      "description": "Moyen de contact.",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "text"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Type de contact.",
+          "enum": [
+            "location",
+            "email",
+            "linkedin",
+            "github",
+            "website",
+            "phone"
+          ]
+        },
+        "icon": {
+          "type": "string",
+          "description": "Icône textuelle ou emoji."
+        },
+        "iconImage": {
+          "type": "string",
+          "description": "Chemin local ou URL vers une image d'icône."
+        },
+        "text": {
+          "type": "string",
+          "description": "Texte affiché."
+        },
+        "href": {
+          "type": "string",
+          "description": "Lien optionnel associé au contact."
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "icon"
+          ]
+        },
+        {
+          "required": [
+            "iconImage"
+          ]
+        }
+      ]
+    },
+    "skillCategory": {
+      "type": "object",
+      "description": "Catégorie de compétences.",
+      "additionalProperties": false,
+      "required": [
+        "category",
+        "items"
+      ],
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Nom de la catégorie."
+        },
+        "items": {
+          "type": "array",
+          "description": "Compétences de cette catégorie.",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "languageItem": {
+      "type": "object",
+      "description": "Langue parlée.",
+      "additionalProperties": false,
+      "required": [
+        "flag",
+        "name",
+        "level"
+      ],
+      "properties": {
+        "flag": {
+          "type": "string",
+          "description": "Drapeau ou icône de la langue."
+        },
+        "name": {
+          "type": "string",
+          "description": "Nom de la langue."
+        },
+        "level": {
+          "type": "string",
+          "description": "Niveau de maîtrise."
+        }
+      }
+    },
+    "iconTextItem": {
+      "type": "object",
+      "description": "Élément avec icône et texte.",
+      "additionalProperties": false,
+      "required": [
+        "icon",
+        "text"
+      ],
+      "properties": {
+        "icon": {
+          "type": "string",
+          "description": "Icône textuelle ou emoji."
+        },
+        "iconImage": {
+          "type": "string",
+          "description": "Chemin local ou URL vers une image d'icône."
+        },
+        "text": {
+          "type": "string",
+          "description": "Texte affiché."
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "icon"
+          ]
+        },
+        {
+          "required": [
+            "iconImage"
+          ]
+        }
+      ]
+    },
+    "profile": {
+      "type": "object",
+      "description": "Section profil du CV.",
+      "additionalProperties": false,
+      "required": [
+        "quote",
+        "content"
+      ],
+      "properties": {
+        "quote": {
+          "type": "string",
+          "description": "Citation ou accroche du profil."
+        },
+        "content": {
+          "type": "string",
+          "description": "Texte principal du profil."
+        }
+      }
+    },
+    "timelineEntry": {
+      "type": "object",
+      "description": "Entrée de parcours professionnel ou bénévole.",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "date",
+        "company",
+        "location",
+        "note"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Titre du poste ou de l'expérience."
+        },
+        "date": {
+          "type": "string",
+          "description": "Période ou date de l'expérience."
+        },
+        "company": {
+          "type": "string",
+          "description": "Entreprise, organisation ou contexte."
+        },
+        "location": {
+          "type": "string",
+          "description": "Lieu de l'expérience."
+        },
+        "note": {
+          "type": "string",
+          "description": "Description détaillée, généralement en Markdown."
+        }
+      }
+    },
+    "educationEntry": {
+      "type": "object",
+      "description": "Entrée de formation.",
+      "additionalProperties": false,
+      "required": [
+        "degree",
+        "date",
+        "school",
+        "location",
+        "note"
+      ],
+      "properties": {
+        "degree": {
+          "type": "string",
+          "description": "Diplôme, certification ou formation."
+        },
+        "date": {
+          "type": "string",
+          "description": "Année ou période de formation."
+        },
+        "school": {
+          "type": "string",
+          "description": "Établissement ou organisme."
+        },
+        "location": {
+          "type": "string",
+          "description": "Lieu de la formation."
+        },
+        "note": {
+          "type": "string",
+          "description": "Description complémentaire, éventuellement en Markdown."
+        }
+      }
+    }
+  }
+}
