@@ -19,12 +19,12 @@ Exemple d’appel :
 
 <!-- Bénévolat -->
 <section aria-label="Bénévolat">
-    <div class="section-title-main">Bénévolat</div>
+    <h2 class="section-title-main">Bénévolat</h2>
 
     {% for exp in volunteering %}
         <article class="exp-block">
             <div class="exp-header">
-                <h2 class="exp-title">{{ exp.title }}</h2>
+                <h3 class="exp-title">{{ exp.title }}</h3>
                 <span class="exp-date">{{ exp.date }}</span>
             </div>
             <div class="exp-company">{{ exp.company }} | {{ exp.location }}</div>

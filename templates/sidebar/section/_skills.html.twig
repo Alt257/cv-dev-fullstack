@@ -23,11 +23,11 @@ Exemple d’appel :
 
 <!-- Compétences techniques -->
 <section aria-label="Compétences techniques">
-    <div class="section-title">Compétences Techniques</div>
+    <h2 class="section-title">Compétences Techniques</h2>
 
     {% for skill in skills %}
+        <h3 class="sidebar-label">{{ skill.category }}</h3>
 
-        <div class="sidebar-label">{{ skill.category }}</div>
         <div class="pill-group">
 
             {% for item in skill.items %}
