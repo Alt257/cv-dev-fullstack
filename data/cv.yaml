@@ -31,39 +31,51 @@ skills:
   - category: "Langages"
     items:
       - "C#"
-      - "TypeScript"
       - "Dart"
-      - "JavaScript"
       - "PHP"
       - "Java"
-      - "SQL"
+      - "JavaScript"
+      - "TypeScript"
       - "HTML/CSS"
+      - "SQL"
+      - "PL/SQL"
 
   - category: "Frameworks & Libs"
     items:
-      - ".NET Core"
-      - "Angular"
-      - "Flutter"
-      - "Ionic"
+      - ".NET"
       - "Symfony"
+      - "Flutter"
+      - "Angular"
+      - "Ionic"
 
   - category: "Outils & DevOps"
     items:
-      - "Docker"
+      - "IntelliJ IDEA"
+      - "WebStorm"
+      - "PhpStorm"
+      - "Rider"
+      - "DataGrip"
+      - "Visual studio"
       - "Git"
+      - "GitHub"
+      - "Docker"
       - "Linux"
       - "Apache"
       - "SSH"
-      - "REST API"
+      - "API"
+      - "REST"
+      - "Postman"
 
   - category: "Pratiques"
     items:
+      - "POO"
       - "TDD"
       - "SOLID"
+      - "CI/CD"
+      - "Microservices"
       - "Design Patterns"
       - "Tests unitaires"
       - "Tests d'intégration"
-      - "CI/CD"
 
 languages:
   - flag: "🇫🇷"
@@ -83,7 +95,7 @@ aptitudes:
 
 interests:
   - icon: "🎭"
-    text: "Théâtre d'improvisation (troupe K.A.O.S.)"
+    text: "Théâtre d'improvisation"
   - icon: "📡"
     text: "Veille tech (TDD, API, sécurité, IA)"
   - icon: "🎲"
@@ -94,27 +106,24 @@ interests:
 profile:
   quote: "Il y a un point commun entre un escape game bien conçu et un logiciel réussi : tout doit s'assembler avec élégance."
   content: >
-    Titulaire du titre professionnel français Concepteur
-    Développeur d’Applications (CDA), je maîtrise l’ensemble
-    du cycle de développement — de l’analyse des besoins à 
-    la mise en production. Cette formation reconnue pour son 
-    exigence technique développe une forte polyvalence 
-    fullstack, une rigueur en architecture logicielle, 
-    ainsi qu’une capacité à concevoir des applications 
-    robustes, sécurisées et évolutives. Habitué aux 
-    bonnes pratiques modernes (TDD, SOLID, design patterns),
-    je suis opérationnel rapidement et capable de contribuer
-    efficacement à des projets web et mobiles dans un
-    environnement Agile.
+    Titulaire du titre professionnel **CDA**, j’ai développé une
+    **polyvalence fullstack** appliquée sur des projets concrets
+    (**Symfony**, **Flutter**, **Angular**). Mes expériences 
+    m’ont permis de contribuer à l’architecture, 
+    au développement et à l’amélioration continue 
+    d’applications **web et mobiles**, en équipe comme 
+    en autonomie. Sensibilisé aux bonnes pratiques 
+    (**TDD**, **SOLID**) et en progression sur la **CI/CD**,
+    je m’intègre rapidement dans un environnement Agile.
 
 experiences:
   - title: "Développeur Full Stack Web & Mobile — Indépendant"
     date: "Octobre 2024 – présent"
     company: "La Bonne Idée"
-    location: "Montréal, QC"
+    location: "France"
     note: |
-      - Développement d'applications web et mobiles sur mesure
-      - Stack principale : Symfony (API REST), Flutter (frontend)
+      *Développement d'applications web et mobiles sur mesure.*
+      - Stack principale : Symfony (API REST), Flutter et Angular
       - Mise en place de pipelines CI/CD, déploiement Docker, gestion Linux/SSH
       - Application systématique du TDD et des principes SOLID
       - Collaboration directe avec les clients pour la conception fonctionnelle et UX
@@ -124,36 +133,46 @@ experiences:
     company: "SynapsIA"
     location: "Metz, France"
     note: |
-      - Développement d'une application mobile Flutter dans un contexte d'intelligence artificielle
+      *Développement d'une application mobile Flutter dans un contexte d'intelligence artificielle.*
       - Intégration d'API REST et gestion d'états complexes (BLoC)
       - Contribution à l'architecture technique et aux revues de code
-      - Amélioration des performances et de la sécurité d'autres applications
+      - Amélioration des performances et de la sécurité d'autres applications de l'entreprise
 
 volunteering:
-  - title: "Concepteur de décors & expériences interactives"
-    date: "2012 - 2019"
-    company: "Jeux d'évasion & projets créatifs collaboratifs"
-    location: "France"
+  - title: "Développeur web"
+    date: "Août 2020 - Janvier 2021"
+    company: "association Réciprocité"
+    location: "Nancy, France"
     note: |
+      *Développement d'un CRM pour gérer les ressources de l'association (environ 300 personnes).*
+      - Développement d'une application web avec php, javascript, bootstrap css, et MySQL
+      - Contribution à l'architecture technique et aux revues de code
+      - Correction de bogues
+      - Amélioration des performances et de la maintenabilité du code
+  - title: "Concepteur de décors interactifs"
+    date: "Mai 2017 - Juin 2019"
+    company: "Epic Gear Factory"
+    location: "Amance, France"
+    note: |
+      Pour jeux d'évasion & projets créatifs collaboratifs.
       - Conception et réalisation de décors interactifs et immersifs
-      - Application des mêmes méthodes de planification et de conception qu'en développement logiciel
-      - Programmation et développement d'électronique embarqué
+      - Conception et programmation (langage C) d'électronique embarqué
 
 education:
-  - degree: "Certification professionnelle avancée – Concepteur Développeur d’Applications"
+  - degree: "Certification professionnelle – Concepteur Développeur d’Applications (CDA)"
+    href: "https://www.francecompetences.fr/recherche/rncp/37873/"
     date: "2023"
-    school: "Ministère du Travail"
+    school: "Ministère du Travail | ENI École"
     location: "Rennes, France"
     note: |
-      Cette formation met l’accent sur :
-      * La polyvalence fullstack : développement front-end et back-end, bases de données, API, intégration continue
-      * L’architecture logicielle : modélisation, conception orientée objet, design patterns, bonnes pratiques de structuration du code
-      * Les méthodes de travail modernes : Agile/Scrum, TDD, tests unitaires et d’intégration, documentation technique
-      * La capacité à mener un projet complet : analyse des besoins, rédaction des spécifications, développement, mise en production et maintenance
-      * La professionnalisation : projets concrets, mises en situation réelles, stage obligatoire et évaluation par des experts du métier
+      - **Polyvalence fullstack** : développement front-end et back-end, bases de données, API, déployment
+      - **Architecture logicielle** : modélisation, conception orientée objet, design patterns, bonnes pratiques de structuration du code
+      - **Méthodes de travail modernes** : Agile/Scrum, TDD, tests unitaires et d’intégration, documentation technique
+      - **Capacité à mener un projet complet** : analyse des besoins, rédaction des spécifications, développement, mise en production et maintenance
+      - **Professionnalisation** : projets concrets, mises en situation réelles, stage obligatoire et évaluation par des experts du métier
 
-  - degree: "Diplôme universitaire de 1er cycle (BAC) – Mathématiques & Informatique"
+  - degree: "Diplôme universitaire de 1er cycle – Mathématiques & Informatique"
     date: "2012"
     school: "Université de Lorraine"
     location: "Nancy, France"
-    note: "Licence Math/Info"
+    note: "Licence Math/Info (3 ans) équivalent à un baccalauréat universitaire au Québec"
