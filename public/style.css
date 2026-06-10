@@ -424,16 +424,19 @@ blockquote::after {
   margin-top: 1px;
 }
 
+.exp-note {
+  margin-top: 6px;
+  font-size: 10px;
+}
+
 .exp-block ul {
   list-style: none;
-  margin-top: 6px;
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
 
 .exp-block li {
-  font-size: 11px;
   color: var(--text-body);
   line-height: 1.5;
   padding-left: 14px;
