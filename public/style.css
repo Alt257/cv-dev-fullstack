@@ -478,6 +478,11 @@ blockquote::after {
   margin-top: 1px;
 }
 
+.formation-note ul {
+  list-style: disc;
+  padding-left: 16px;
+}
+
 /* Footer discret */
 .footer-cv {
   grid-column: 1 / -1;
