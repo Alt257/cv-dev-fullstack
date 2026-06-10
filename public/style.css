@@ -648,12 +648,11 @@ blockquote::after {
   }
 
   @page {
-    margin: var(--print-page-margin) !important;
+    margin: 0 !important;
   }
 
   html,
   body {
-    --print-page-margin: 0;
     margin: 0 !important;
     padding: 0 !important;
     background: none !important;
@@ -702,6 +701,7 @@ blockquote::after {
   }
 
   .sidebar {
+    padding: var(--page-padding-top) 18px !important;
     border-radius: 0 !important;
     align-self: stretch !important;
     gap: 12px !important;
@@ -748,7 +748,7 @@ blockquote::after {
   }
 
   .exp-title {
-    font-size: 13px !important;
+    font-size: 12px !important;
   }
 
   .exp-date {
@@ -774,7 +774,7 @@ blockquote::after {
 
   /* ── Impression Noir et Blanc ───────────────────────────────── */
   .print-bw {
-    padding: 0 5mm !important;
+    /*padding: 5mm 5mm !important;*/
     color: black !important;
     background: white;
   }
