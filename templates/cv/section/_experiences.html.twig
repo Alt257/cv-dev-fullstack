@@ -21,18 +21,16 @@ Exemple d’appel :
 <section aria-label="Expériences professionnelles">
     <div class="section-title-main">Expériences Professionnelles</div>
 
-    {% for experience in experiences %}
+    {% for exp in experiences %}
         <article class="exp-block">
             <div class="exp-header">
-                <h2 class="exp-title">{{ experience.title }}</h2>
-                <span class="exp-date">{{ experience.date }}</span>
+                <h2 class="exp-title">{{ exp.title }}</h2>
+                <span class="exp-date">{{ exp.date }}</span>
             </div>
-            <div class="exp-company">{{ experience.company }} | {{ experience.location }}</div>
-            <ul class="exp-bullets" style="list-style:none;">
-                {% for bullet in experience.bullets %}
-                    <li class="exp-bullet">{{ bullet | markdown }}</li>
-                {% endfor %}
-            </ul>
+            <div class="exp-company">{{ exp.company }} | {{ exp.location }}</div>
+            <div class="exp-note">
+                {{ exp.note | markdown }}
+            </div>
         </article>
     {% endfor %}
 </section>

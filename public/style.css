@@ -424,14 +424,15 @@ blockquote::after {
   margin-top: 1px;
 }
 
-.exp-bullets {
+.exp-block ul {
+  list-style: none;
   margin-top: 6px;
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
 
-.exp-bullet {
+.exp-block li {
   font-size: 11px;
   color: var(--text-body);
   line-height: 1.5;
@@ -439,7 +440,7 @@ blockquote::after {
   position: relative;
 }
 
-.exp-bullet::before {
+.exp-block li::before {
   content: '•';
   position: absolute;
   left: 0;

@@ -112,32 +112,32 @@ experiences:
     date: "Octobre 2024 – présent"
     company: "La Bonne Idée"
     location: "Montréal, QC"
-    bullets:
-      - "Développement d'applications web et mobiles sur mesure"
-      - "Stack principale : Symfony (API REST), Flutter (frontend)"
-      - "Mise en place de pipelines CI/CD, déploiement Docker, gestion Linux/SSH"
-      - "Application systématique du TDD et des principes SOLID"
-      - "Collaboration directe avec les clients pour la conception fonctionnelle et UX"
+    note: |
+      - Développement d'applications web et mobiles sur mesure
+      - Stack principale : Symfony (API REST), Flutter (frontend)
+      - Mise en place de pipelines CI/CD, déploiement Docker, gestion Linux/SSH
+      - Application systématique du TDD et des principes SOLID
+      - Collaboration directe avec les clients pour la conception fonctionnelle et UX
 
   - title: "Développeur d'Applications Mobiles"
     date: "Mars 2025 - Septembre 2025"
     company: "SynapsIA"
     location: "Metz, France"
-    bullets:
-      - "Développement d'une application mobile Flutter dans un contexte d'intelligence artificielle"
-      - "Intégration d'API REST et gestion d'états complexes (BLoC)"
-      - "Contribution à l'architecture technique et aux revues de code"
-      - "Amélioration des performances et de la sécurité d'autres applications"
+    note: |
+      - Développement d'une application mobile Flutter dans un contexte d'intelligence artificielle
+      - Intégration d'API REST et gestion d'états complexes (BLoC)
+      - Contribution à l'architecture technique et aux revues de code
+      - Amélioration des performances et de la sécurité d'autres applications
 
 volunteering:
   - title: "Concepteur de décors & expériences interactives"
     date: "2012 - 2019"
     company: "Jeux d'évasion & projets créatifs collaboratifs"
     location: "France"
-    bullets:
-      - "Conception et réalisation de décors interactifs et immersifs"
-      - "Application des mêmes méthodes de planification et de conception qu'en développement logiciel"
-      - "Programmation et développement d'électronique embarqué"
+    note: |
+      - Conception et réalisation de décors interactifs et immersifs
+      - Application des mêmes méthodes de planification et de conception qu'en développement logiciel
+      - Programmation et développement d'électronique embarqué
 
 education:
   - degree: "Certification professionnelle avancée – Concepteur Développeur d’Applications"
