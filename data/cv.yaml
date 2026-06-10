@@ -5,9 +5,9 @@ identity:
   description: "CV de Benoît Rataux – Développeur Full Stack Web & Mobile (.NET Core, Angular, Flutter)"
 
 status:
-  - iconImage: "assets/stamp-on-document.png"
+  - iconImage: "assets/icons/stamp-on-document.png"
     text: "Permis de travail Ouvert (2028)"
-  - iconImage: "assets/accept.png"
+  - iconImage: "assets/icons/accept.png"
     text: "Disponible immédiatement"
 
 contact:
@@ -93,9 +93,19 @@ interests:
 
 profile:
   quote: "Il y a un point commun entre un escape game bien conçu et un logiciel réussi : tout doit s'assembler avec élégance."
-  content: |
-    C'est cette logique qui guide mon travail.
-    Développeur full stack formé à la fois à l’université (Math/Info) et par une certification professionnelle avancée (CDA), spécialisé en conception et développement d’applications **web** et **mobiles**.
+  content: >
+    Titulaire du titre professionnel français Concepteur
+    Développeur d’Applications (CDA), je maîtrise l’ensemble
+    du cycle de développement — de l’analyse des besoins à 
+    la mise en production. Cette formation reconnue pour son 
+    exigence technique développe une forte polyvalence 
+    fullstack, une rigueur en architecture logicielle, 
+    ainsi qu’une capacité à concevoir des applications 
+    robustes, sécurisées et évolutives. Habitué aux 
+    bonnes pratiques modernes (TDD, SOLID, design patterns),
+    je suis opérationnel rapidement et capable de contribuer
+    efficacement à des projets web et mobiles dans un
+    environnement Agile.
 
 experiences:
   - title: "Développeur Full Stack Web & Mobile — Indépendant"
@@ -133,8 +143,14 @@ education:
   - degree: "Certification professionnelle avancée – Concepteur Développeur d’Applications"
     date: "2023"
     school: "Ministère du Travail"
-    location: "Nancy, France"
-    note: "RNCP niveau 6"
+    location: "Rennes, France"
+    note: |
+      Cette formation met l’accent sur :
+      * La polyvalence fullstack : développement front-end et back-end, bases de données, API, intégration continue
+      * L’architecture logicielle : modélisation, conception orientée objet, design patterns, bonnes pratiques de structuration du code
+      * Les méthodes de travail modernes : Agile/Scrum, TDD, tests unitaires et d’intégration, documentation technique
+      * La capacité à mener un projet complet : analyse des besoins, rédaction des spécifications, développement, mise en production et maintenance
+      * La professionnalisation : projets concrets, mises en situation réelles, stage obligatoire et évaluation par des experts du métier
 
   - degree: "Diplôme universitaire de 1er cycle (BAC) – Mathématiques & Informatique"
     date: "2012"
