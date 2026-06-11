@@ -320,6 +320,10 @@
           "type": "string",
           "description": "Titre du poste ou de l'expérience."
         },
+        "title_href": {
+          "type": "string",
+          "description": "Lien vers une présentation du titre du poste ou de l'expérience."
+        },
         "date": {
           "type": "string",
           "description": "Période ou date de l'expérience."
@@ -327,6 +331,10 @@
         "company": {
           "type": "string",
           "description": "Entreprise, organisation ou contexte."
+        },
+        "company_href": {
+          "type": "string",
+          "description": "Lien vers le site de l'entreprise, de l'organisation ou du contexte."
         },
         "location": {
           "type": "string",
@@ -354,6 +362,10 @@
           "type": "string",
           "description": "Diplôme, certification ou formation."
         },
+        "degree_href": {
+          "type": "string",
+          "description": "Lien vers le diplôme, la certification ou la formation."
+        },
         "date": {
           "type": "string",
           "description": "Année ou période de formation."
@@ -361,6 +373,10 @@
         "school": {
           "type": "string",
           "description": "Établissement ou organisme."
+        },
+        "school_href": {
+          "type": "string",
+          "description": "Lien vers l'établissement ou organisme de formation."
         },
         "location": {
           "type": "string",
