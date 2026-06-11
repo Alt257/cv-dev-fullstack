@@ -118,8 +118,10 @@ profile:
 
 experiences:
   - title: "Développeur Full Stack Web & Mobile — Indépendant"
+    title_href: "https://la-bonne-idee.com"
     date: "Octobre 2024 – présent"
     company: "La Bonne Idée"
+    company_href: "https://la-bonne-idee.com"
     location: "France"
     note: |
       *Développement d'applications web et mobiles sur mesure.*
@@ -131,6 +133,7 @@ experiences:
   - title: "Développeur d'Applications Mobiles"
     date: "Mars 2025 - Septembre 2025"
     company: "SynapsIA"
+    company_href: "https://synapsia.fr"
     location: "Metz, France"
     note: |
       *Développement d'une application mobile Flutter dans un contexte d'intelligence artificielle.*
@@ -142,6 +145,7 @@ volunteering:
   - title: "Développeur web"
     date: "Août 2020 - Janvier 2021"
     company: "association Réciprocité"
+    company_href: "https://reciprocite.fr"
     location: "Nancy, France"
     note: |
       *Développement d'un CRM pour gérer les ressources de l'association (environ 300 personnes).*
@@ -152,6 +156,7 @@ volunteering:
   - title: "Concepteur de décors interactifs"
     date: "Mai 2017 - Juin 2019"
     company: "Epic Gear Factory"
+    company_href: "https://annuaire-entreprises.data.gouv.fr/entreprise/epic-gear-832998652"
     location: "Amance, France"
     note: |
       Pour jeux d'évasion & projets créatifs collaboratifs.
@@ -162,7 +167,8 @@ education:
   - degree: "Certification professionnelle – Concepteur Développeur d’Applications (CDA)"
     degree_href: "https://www.francecompetences.fr/recherche/rncp/37873/"
     date: "2023"
-    school: "Ministère du Travail | ENI École"
+    school: "ENI École"
+    school_href: "https://www.eni-ecole.fr/"
     location: "Rennes, France"
     note: |
       - **Polyvalence fullstack** : développement front-end et back-end, bases de données, API, déployment
