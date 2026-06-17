@@ -6,9 +6,9 @@ identity:
 
 status:
   - iconImage: "assets/icons/stamp-on-document.png"
-    text: "Permis de travail Ouvert (2028)"
+    text: "**Permis de travail Ouvert**"
   - iconImage: "assets/icons/accept.png"
-    text: "Disponible immédiatement"
+    text: "**Disponible immédiatement**"
 
 contact:
   - type: "location"
@@ -106,15 +106,16 @@ interests:
 profile:
   quote: "Il y a un point commun entre un escape game bien conçu et un logiciel réussi : tout doit s'assembler avec élégance."
   content: >
-    Titulaire du titre professionnel **CDA**, j’ai développé une
-    **polyvalence fullstack** appliquée sur des projets concrets
-    (**Symfony**, **Flutter**, **Angular**). Mes expériences 
-    m’ont permis de contribuer à l’architecture, 
-    au développement et à l’amélioration continue 
-    d’applications **web et mobiles**, en équipe comme 
-    en autonomie. Sensibilisé aux bonnes pratiques 
-    (**TDD**, **SOLID**) et en progression sur la **CI/CD**,
-    je m’intègre rapidement dans un environnement Agile.
+    ***Admissible à travailler au Canada immédiatement 
+    (Permis de travail ouvert valide jusqu'à 2028-04-27 – Sans parrainage requis)***
+    
+    Développeur polyvalent certifié, je maîtrise les écosystèmes 
+    **Web (Symfony, .NET, Angular)** et **Mobile (Flutter)**. 
+    Mon parcours unique alliant rigueur logicielle et créativité
+    technique me permet de concevoir des architectures robustes
+    et sécurisées. Orienté résultats, j'intègre rapidement les 
+    équipes agiles pour livrer du **code propre (SOLID, TDD)**
+    et optimiser les performances applicatives.
 
 experiences:
   - title: "Développeur Full Stack Web & Mobile — Indépendant"
