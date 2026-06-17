@@ -145,17 +145,17 @@ experiences:
 
 
 volunteering:
-  - title: "Développeur web"
+  - title: "Développeur web php/JavaScript"
     date: "Août 2020 - Janvier 2021"
-    company: "association Réciprocité"
+    company: "Association Réciprocité"
     company_href: "https://reciprocite.fr"
     location: "Nancy, France"
     note: |
-      *Développement d'un CRM pour gérer les ressources de l'association (environ 300 personnes).*
-      - Développement d'une application web avec php, javascript, bootstrap css, et MySQL
-      - Contribution à l'architecture technique et aux revues de code
-      - Correction de bogues
-      - Amélioration des performances et de la maintenabilité du code
+      - **Collaboration et co-développement :** Intégration de l'équipe technique en renfort d'un développeur senior (freelance) pour accélérer le déploiement d'un CRM sur mesure.
+      - **Développement Fullstack architecture native :** Programmation de nouvelles fonctionnalités métiers et optimisation des interfaces utilisateurs en utilisant PHP et JavaScript natif (sans framework).
+      - **Maintenance et évolution :** Analyse du code existant, résolution de bogues complexes et amélioration continue de la structure de la base de données relationnelle.
+      - **Autonomie et gestion du besoin :** Traduction des besoins opérationnels de l'association en solutions techniques concrètes et fonctionnelles.
+    
   - title: "Concepteur de décors interactifs"
     date: "Mai 2017 - Juin 2019"
     company: "Epic Gear Factory"
