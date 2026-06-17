@@ -178,10 +178,10 @@ education:
     location: "Rennes, France"
     note: |
       *(Équivalence québécoise : Spécialisation technique de niveau collégial/universitaire en développement logiciel)*
-      - **Frameworks et architectures d'entreprise :** Apprentissage approfondi et pratiques de pointe sur **Symfony** (PHP), **Spring** (Java), **.NET / C#**, **Angular** et développement mobile (**Xamarin**).
+      - **Frameworks et architectures d'entreprise :** Apprentissage approfondi et pratiques de pointe sur **Symfony** (PHP), **Spring** (Java), **.NET / C#**, **Angular** (TypeScript) et développement mobile (**Xamarin**).
       - **Bases de données et systèmes :** Administration de serveurs Apache sous Linux, modélisation et requêtage complexe avec **SQL**, **MySQL** et **PL/SQL**.
       - **Sécurité applicative :** Sensibilisation et application des normes de sécurité pour contrer le **Top 10 d'OWASP** (protection contre les failles CSRF, XSS, injections SQL, etc.).
-      - **Architecture logicielle et méthodologies :** Conception d'applications selon l'architecture en couches (séparation stricte de la présentation, de la logique métier et de l'accès aux données) et fonctionnement en mode Agile.
+      - **Architecture logicielle et méthodologies :** Conception d'applications selon l'architecture en couches **MVC / N-Tier** (séparation stricte de la présentation, de la logique métier et de l'accès aux données) et fonctionnement en mode Agile.
       - **Professionnalisation** : projets concrets, mises en situation réelles, stage obligatoire et évaluation par des experts du métier.
 
   - degree: "Diplôme universitaire de 1er cycle – Mathématiques & Informatique"
