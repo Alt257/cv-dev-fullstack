@@ -409,7 +409,7 @@ blockquote::after {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 8px;
+  gap: 42px;
   flex-wrap: wrap;
 }
 
@@ -495,8 +495,26 @@ blockquote::after {
 }
 
 .formation-note ul {
-  list-style: disc;
-  padding-left: 16px;
+  margin-top: 6px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.formation-note li {
+  color: var(--text-body);
+  line-height: 1.5;
+  padding-left: 14px;
+  position: relative;
+}
+
+.formation-note li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+  font-weight: 700;
 }
 
 /* Footer discret */
