@@ -6,9 +6,9 @@ identity:
 
 status:
   - iconImage: "assets/icons/stamp-on-document.png"
-    text: "**Permis de travail Ouvert**"
+    text: "Permis de travail Ouvert"
   - iconImage: "assets/icons/accept.png"
-    text: "**Disponible immédiatement**"
+    text: "Disponible immédiatement"
 
 contact:
   - type: "location"
@@ -137,10 +137,12 @@ experiences:
     company_href: "https://synapsia.fr"
     location: "Metz, France"
     note: |
-      *Développement d'une application mobile Flutter dans un contexte d'intelligence artificielle.*
-      - Intégration d'API REST et gestion d'états complexes (BLoC)
-      - Contribution à l'architecture technique et aux revues de code
-      - Amélioration des performances et de la sécurité d'autres applications de l'entreprise
+      *Développement d'une **application mobile (Flutter)** dans un contexte d'intelligence artificielle.*
+      - **Montée en compétences rapide :** Autonomie complète acquise sur le framework Flutter en moins de deux semaines pour répondre aux besoins de l'entreprise.
+      - **Développement et architecture :** Conception d'applications connectées à des modèles d'IA via l'intégration d'API REST et la gestion d'états complexes (pattern **BLoC**).
+      - **Performance et optimisation :** Audit et amélioration du code d'applications existantes, menant à de meilleurs temps de réponse et à la résolution de failles de sécurité majeures.
+      - **Collaboration et communication :** Participation active à la rédaction de spécifications fonctionnelles et UX, ainsi qu'à la rédaction de documents techniques.
+
 
 volunteering:
   - title: "Développeur web"
