@@ -23,17 +23,17 @@ Exemple d’appel :
 
     {% for item in education %}
         <div class="formation-block">
-            <h3 class="exp-header">
+            <div class="exp-header">
 
-                <span class="formation-degree">
+                <h3 class="formation-degree">
                     {% include 'shared/_text.html.twig' with {
                         text: item.degree,
                         href: item.degree_href,
                     } only %}
-                </span>
+                </h3>
 
                 <span class="exp-date">{{ item.date }}</span>
-            </h3>
+            </div>
 
             <div class="formation-school">
                 {% include 'shared/_text.html.twig' with {
