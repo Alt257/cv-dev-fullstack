@@ -720,7 +720,7 @@ blockquote::after {
   }
 
   .sidebar {
-    padding: var(--page-padding-top) 18px !important;
+    padding: var(--page-padding-top) 16px !important;
     border-radius: 0 !important;
     align-self: stretch !important;
     gap: 12px !important;
@@ -732,6 +732,10 @@ blockquote::after {
   }
 
   .sidebar-title {
+    font-size: 12px !important;
+  }
+
+  .status-item {
     font-size: 12px !important;
   }
 
