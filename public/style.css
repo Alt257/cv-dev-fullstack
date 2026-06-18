@@ -702,7 +702,7 @@ blockquote::after {
     max-width: 900px !important;
     margin: 0 auto !important;
     box-shadow: none !important;
-    display: grid !important;
+    display: block !important;
     grid-template-columns: 30% 70% !important;
     grid-template-rows: auto !important;
     position: relative;
@@ -720,9 +720,11 @@ blockquote::after {
   }
 
   .sidebar {
+    float: left;
+    width: 30% !important;
+    min-height: 100vh !important;
     padding: var(--page-padding-top) 16px !important;
     border-radius: 0 !important;
-    align-self: stretch !important;
     gap: 12px !important;
   }
 
@@ -758,6 +760,7 @@ blockquote::after {
   }
 
   .main-content {
+    display: flex !important;
     padding: var(--page-padding-top) 18px !important;
     gap: 10px !important;
   }
@@ -797,7 +800,6 @@ blockquote::after {
 
   /* ── Impression Noir et Blanc ───────────────────────────────── */
   .print-bw {
-    /*padding: 5mm 5mm !important;*/
     color: black !important;
     background: white;
   }
@@ -816,6 +818,8 @@ blockquote::after {
   }
 
   .print-bw .sidebar {
+    padding-left: 12mm !important;
+    padding-right: 0 !important;
     gap: 22px !important;
   }
 
@@ -847,6 +851,7 @@ blockquote::after {
 
   .print-bw .main-content {
     gap: 12px !important;
+    padding: var(--page-padding-top) 12mm !important;
   }
 
   .print-bw .section-title-main {
