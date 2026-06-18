@@ -1,0 +1,44 @@
+/* ── Responsive — Mobile (≤ 480px) ────────────────────────── */
+@media (max-width: 480px) {
+  .page-wrapper {
+    padding: 12px 8px 32px;
+  }
+
+  .cv-page {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .sidebar {
+    gap: 14px;
+  }
+
+  .sidebar-name {
+    font-size: 26px;
+  }
+
+  .sidebar-title {
+    font-size: 12px;
+  }
+
+  .main-content {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .exp-date {
+    align-self: flex-start;
+  }
+
+  .print-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 8px;
+    right: 8px;
+  }
+}
