@@ -670,6 +670,11 @@ blockquote::after {
     margin: 0 !important;
   }
 
+  article {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
   html,
   body {
     margin: 0 !important;
