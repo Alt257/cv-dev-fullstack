@@ -29,7 +29,11 @@ Exemple d’appel :
 
     {% for item in languages %}
         <p class="lang-item">
-            {{ item.flag }} {{ item.name }} — <strong>{{ item.level }}</strong>
+            {{ item.flag }} {{ item.name }}
+
+            {% if item.level is not null %}
+                — <strong>{{ item.level }}</strong>
+            {% endif %}
         </p>
     {% endfor %}
 </section>
