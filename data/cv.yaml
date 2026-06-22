@@ -6,7 +6,7 @@ identity:
 
 status:
   - iconImage: "assets/icons/stamp-on-document.png"
-    text: "Permis de travail Ouvert"
+    text: "Permis de travail"
   - iconImage: "assets/icons/accept.png"
     text: "Disponible immédiatement"
 
@@ -80,10 +80,8 @@ skills:
 languages:
   - flag: "🇫🇷"
     name: "Français"
-    level: "Natif"
   - flag: "🇬🇧"
     name: "Anglais"
-    level: "Professionnel (B2)"
 
 aptitudes:
   - "Travail en équipe & collaboration"
@@ -106,8 +104,7 @@ interests:
 profile:
   quote: "Il y a un point commun entre un escape game bien conçu et un logiciel réussi : tout doit s'assembler avec élégance."
   content: >
-    ***Admissible à travailler au Canada immédiatement 
-    (Permis de travail ouvert valide jusqu'à 2028-04-27 – Sans parrainage requis)***
+    ***Admissible à travailler au Canada immédiatement – Sans parrainage requis***
     
     Développeur polyvalent certifié, je maîtrise les écosystèmes 
     **Web (Symfony, .NET, Angular)** et **Mobile (Flutter)**. 
@@ -177,7 +174,7 @@ education:
     school_href: "https://www.eni-ecole.fr/"
     location: "Rennes, France"
     note: |
-      *(Équivalence québécoise : Spécialisation technique de niveau collégial/universitaire en développement logiciel)*
+      *(Équivalence québécoise : Spécialisation technique de niveau collégial en développement logiciel)*
       - **Frameworks et architectures d'entreprise :** Apprentissage approfondi et pratiques de pointe sur **Symfony** (PHP), **Spring** (Java), **.NET / C#**, **Angular** (TypeScript) et développement mobile (**Xamarin**).
       - **Bases de données et systèmes :** Administration de serveurs Apache sous Linux, modélisation et requêtage complexe avec **SQL**, **MySQL** et **PL/SQL**.
       - **Sécurité applicative :** Sensibilisation et application des normes de sécurité pour contrer le **Top 10 d'OWASP** (protection contre les failles CSRF, XSS, injections SQL, etc.).
