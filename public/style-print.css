@@ -1,5 +1,39 @@
 /* ── Impression PDF ─────────────────────────────────────────── */
 @media print {
+  :root {
+    --navy: #0f172a !important;
+    --navy-light: #1e293b !important;
+    --teal: #06b6d4 !important;
+    --teal-dark: #0891b2 !important;
+    --teal-light: #67e8f9 !important;
+    --white: #ffffff !important;
+    --sidebar-bg: #0f172a !important;
+    --page-bg: #ffffff !important;
+    --muted: #94a3b8 !important;
+    --muted-dark: #64748b !important;
+    --text-main: #1e293b !important;
+    --text-body: #334155 !important;
+    --text-light: #cbd5e1 !important;
+    --accent-bg: #f0fdfa !important;
+  }
+
+  body.print-color {
+    --navy: #0f172a !important;
+    --navy-light: #1e293b !important;
+    --teal: #06b6d4 !important;
+    --teal-dark: #0891b2 !important;
+    --teal-light: #67e8f9 !important;
+    --white: #ffffff !important;
+    --sidebar-bg: #0f172a !important;
+    --page-bg: #ffffff !important;
+    --muted: #94a3b8 !important;
+    --muted-dark: #64748b !important;
+    --text-main: #1e293b !important;
+    --text-body: #334155 !important;
+    --text-light: #cbd5e1 !important;
+    --accent-bg: #f0fdfa !important;
+  }
+
   .no-print {
     display: none !important;
   }
@@ -10,7 +44,7 @@
   }
 
   @page {
-    padding: 12mm 12mm !important;
+    padding: 22mm 12mm !important;
   }
 
   article {
@@ -148,78 +182,92 @@
   }
 
   /* ── Impression Noir et Blanc ───────────────────────────────── */
-  .print-bw {
+  body.print-bw {
+    --navy: #000000 !important;
+    --navy-light: #000000 !important;
+    --teal: #000000 !important;
+    --teal-dark: #000000 !important;
+    --teal-light: #000000 !important;
+    --white: #ffffff !important;
+    --sidebar-bg: #ffffff !important;
+    --page-bg: #ffffff !important;
+    --muted: #000000 !important;
+    --muted-dark: #000000 !important;
+    --text-main: #000000 !important;
+    --text-body: #000000 !important;
+    --text-light: #000000 !important;
+    --accent-bg: #ffffff !important;
     color: black !important;
     background: white !important;
   }
 
-  .print-bw * {
+  body.print-bw * {
     color: black !important;
     background: white !important;
     box-shadow: none !important;
     border: none !important;
   }
 
-  .print-bw .cv-page::after {
+  body.print-bw .cv-page::after {
     display: none !important;
     background: none !important;
     height: 0 !important;
   }
 
-  .print-bw .sidebar {
+  body.print-bw .sidebar {
     padding-left: 12mm !important;
     padding-right: 0 !important;
     gap: 22px !important;
   }
 
-  .print-bw .dot-pattern {
+  body.print-bw .dot-pattern {
     display: none !important;
   }
 
-  .print-bw .section-title {
+  body.print-bw .section-title {
     font-size: 14px !important;
     font-weight: 700 !important;
     border-bottom: none !important;
     margin-bottom: 1px !important;
   }
 
-  .print-bw .sidebar-label {
+  body.print-bw .sidebar-label {
     font-size: 11px !important;
     font-weight: 700 !important;
     margin-top: 12px !important;
   }
 
-  .print-bw .pill-group {
+  body.print-bw .pill-group {
     gap: 8px !important;
   }
 
-  .print-bw .pill {
+  body.print-bw .pill {
     padding: 0 !important;
     line-height: 1.2 !important;
   }
 
-  .print-bw .main-content {
+  body.print-bw .main-content {
     gap: 12px !important;
     padding: var(--page-padding-top) 12mm !important;
   }
 
-  .print-bw .section-title-main {
+  body.print-bw .section-title-main {
     font-size: 14px !important;
     border-bottom: none !important;
     margin-bottom: 2px !important;
   }
 
-  .print-bw .profil-box {
+  body.print-bw .profil-box {
     padding: 0 !important;
   }
 
-  .print-bw blockquote {
+  body.print-bw blockquote {
     font-size: 12px !important;
     padding: 4px 8px !important;
     margin: 0 !important;
   }
 
-  .print-bw .exp-note li::before {
+  body.print-bw .exp-note li::before {
     color: black !important;
   }
 }

@@ -5,12 +5,17 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta content="CV de Benoît Rataux – Développeur Full Stack Web & Mobile (.NET Core, Angular, Flutter)"
           name="description"/>
+
     <title>CV – Benoît Rataux | Développeur Full Stack</title>
+
+    {# fonts #}
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"/>
     <link href="assets/icons/stamp-on-document.png" rel="icon">
+
+    {# styles #}
     <link href="style.css" rel="stylesheet"/>
     <link href="style-tablet.css" media="screen and (max-width: 768px)" rel="stylesheet"/>
     <link href="style-mobile.css" media="screen and (max-width: 480px)" rel="stylesheet"/>
@@ -34,15 +39,32 @@
 {% block main %}{% endblock %}
 
 <script>
-    function printCV() {
-        document.body.classList.remove('print-bw');
+    function resetPrintMode() {
+        document.body.classList.remove('print-color', 'print-bw');
+    }
+
+    function printWithMode(modeClass) {
+        resetPrintMode();
+        document.body.classList.add(modeClass);
         window.print();
     }
 
-    function printCVinBlackAndWhite() {
-        document.body.classList.add('print-bw');
-        window.print();
+    function printCV() {
+        printWithMode('print-color');
     }
+
+    function printCVinBlackAndWhite() {
+        printWithMode('print-bw');
+    }
+
+    window.addEventListener('afterprint', resetPrintMode);
+
+    const printMediaQuery = window.matchMedia('print');
+    printMediaQuery.addEventListener('change', function (event) {
+        if (!event.matches) {
+            resetPrintMode();
+        }
+    });
 
     document.addEventListener('keydown', function (e) {
         if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
