@@ -23,7 +23,7 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --transition: 150ms ease;
-  --page-padding-top: 20px;
+  --page-padding-vertical: 20px;
 }
 
 /* ── Reset ──────────────────────────────────────────────────── */
@@ -167,7 +167,7 @@ blockquote::after {
 .sidebar {
   background: var(--sidebar-bg);
   color: var(--text-light);
-  padding: var(--page-padding-top) 20px;
+  padding: var(--page-padding-vertical) 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -357,7 +357,7 @@ blockquote::after {
 
 /* ── Contenu principal ──────────────────────────────────────── */
 .main-content {
-  padding: var(--page-padding-top) 22px;
+  padding: var(--page-padding-vertical) 22px;
   display: flex;
   flex-direction: column;
   gap: 13px;
