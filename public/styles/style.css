@@ -58,18 +58,18 @@ a:hover {
 blockquote {
   position: relative;
   font-style: italic;
-  font-size: 14px;
+  font-size: 1.5em;
   text-align: center;
   color: var(--text-main);
   line-height: 1.6;
-  padding-left: 1.3rem;
-  padding-bottom: 0.5rem;
+  padding-left: 1.3em;
+  padding-bottom: 0.5em;
 }
 
 blockquote::before {
   content: "“";
   font-family: "Arial Rounded MT Bold", serif;
-  font-size: 2.2rem;
+  font-size: 1.6em;
   line-height: 1;
   position: absolute;
   top: 0;
@@ -79,10 +79,10 @@ blockquote::before {
 blockquote::after {
   content: "”";
   font-family: "Arial Rounded MT Bold", serif;
-  font-size: 2.2rem;
+  font-size: 1.6em;
   line-height: 1;
   position: absolute;
-  bottom: -0.5rem;
+  bottom: -0.5em;
   right: 0;
 }
 
@@ -148,6 +148,12 @@ blockquote::after {
   flex-direction: column;
 }
 
+.sidebar-name {
+  line-height: 1.02;
+  color: var(--white);
+  text-wrap: balance;
+}
+
 .sidebar-section-title {
   text-transform: uppercase;
   color: var(--teal-light);
@@ -155,16 +161,16 @@ blockquote::after {
 
 .dot-pattern {
   display: flex;
-  gap: 4px;
+  gap: 0.5em;
   flex-wrap: wrap;
-  width: 40px;
+  width: 6em;
   opacity: 0.25;
-  margin-top: 8px;
+  margin-top: 1em;
 }
 
 .dot-pattern span {
-  width: 4px;
-  height: 4px;
+  width: 0.5em;
+  height: 0.5em;
   border-radius: 50%;
   background: var(--teal);
 }
@@ -173,6 +179,16 @@ blockquote::after {
 .section-title {
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sidebar-section-subtitle {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+  margin-top: 0.6em;
+  letter-spacing: 0.05em;
+  color: var(--muted);
 }
 
 /* Status */
@@ -215,13 +231,6 @@ blockquote::after {
 }
 
 /* Compétences — sous-catégories */
-.sidebar-label {
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--muted);
-}
-
 .pill-group {
   display: flex;
   flex-wrap: wrap;
@@ -292,16 +301,17 @@ blockquote::after {
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.05em;
   padding-bottom: 0;
   margin-bottom: 2px;
+  color: var(--navy);
 }
 
 /* Titres de section — main */
 .section-title--main {
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.05em;
   color: var(--navy);
 }
 

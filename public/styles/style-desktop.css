@@ -1,24 +1,19 @@
 @media screen and (min-width: 768px) {
   :root {
-    --font-size-title1: clamp(30px, 3.2vw, 38px);
-    --font-size-title2: clamp(24px, 2.4vw, 30px);
-    --font-size-title3: clamp(20px, 2vw, 24px);
-    --font-size-title4: clamp(16px, 1.6vw, 20px);
-    --font-size-text: clamp(14px, 1.4vw, 18px);
-    --font-size-subtext: clamp(12px, 1.2vw, 16px);
-    --font-size-status: clamp(12px, 1.2vw, 16px);
-    --font-size-contact: clamp(12px, 1.2vw, 16px);
-    --font-size-pill: clamp(12px, 1.2vw, 16px);
-    --font-size-quote: clamp(16px, 1.6vw, 20px);
+    --font-size-main: clamp(14px, 1.4vw, 18px);
+    --font-size-sidebar: clamp(12px, 1.2vw, 16px);
 
-    --icon-size-s: clamp(12px, 1.2vw, 16px);
-    --icon-size-m: clamp(16px, 1.6vw, 20px);
-    --icon-size-l: clamp(20px, 2vw, 24px);
-    --icon-size-xl: clamp(24px, 2.4vw, 28px);
-  }
+    --font-size-title: 3.2em;
+    --font-size-section-title: 2.2em;
+    --font-size-article-title: 1.6em;
+    --font-size-article-subtitle: 1.2em;
+    --font-size-quote: 1.6em;
+    --font-size-status: 1.2em;
 
-  html {
-    font-size: var(--font-size-text);
+    --icon-size: 1.2em;
+
+    /*--gap-between-sections: clamp(24px, 2.4vw, 32px);*/
+    /*--gap-between-articles: clamp(24px, 2.4vw, 32px);*/
   }
 
   .page-wrapper {
@@ -41,62 +36,65 @@
     backdrop-filter: blur(8px);
   }
 
+  /* ── Sidebar ────────────────────────────────────────────────── */
   .sidebar {
-    font-size: var(--font-size-subtext);
+    font-size: var(--font-size-sidebar);
     position: sticky;
     top: 14px;
     align-self: start;
     min-height: calc(100vh - 92px);
     padding: 30px 24px 28px;
-    background: linear-gradient(165deg, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.78)),
-    radial-gradient(circle at 25% 5%, rgba(34, 211, 238, 0.23), rgba(6, 182, 212, 0));
     border-right: 1px solid rgba(148, 163, 184, 0.18);
-    gap: 24px;
+    gap: 2em;
   }
 
   .sidebar-name {
-    font-size: var(--font-size-title1);
-    line-height: 1.02;
-    color: var(--white);
-    text-wrap: balance;
+    font-size: var(--font-size-title);
   }
 
-  .section--side {
-    padding: 10px 10px 12px;
-    border-radius: 14px;
-    background: rgba(15, 23, 42, 0.34);
-    border: 1px solid rgba(148, 163, 184, 0.1);
-    transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+  .sidebar-section {
+    /*padding: 10px 10px 12px;*/
+    /*border-radius: 14px;*/
+    /*background: rgba(15, 23, 42, 0.34);*/
+    /*border: 1px solid rgba(148, 163, 184, 0.1);*/
+    /*transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;*/
   }
 
-  .section--side:hover {
-    transform: translateX(3px);
-    border-color: rgba(103, 232, 249, 0.45);
-    box-shadow: 0 10px 28px rgba(2, 6, 23, 0.34);
+  .sidebar-section:hover {
+    /*transform: translateX(3px);*/
+    /*border-color: rgba(103, 232, 249, 0.45);*/
+    /*box-shadow: 0 10px 28px rgba(2, 6, 23, 0.34);*/
   }
 
-  .section-title--side {
-    font-size: var(--font-size-title2);
+  .sidebar-section-title {
+    font-size: var(--font-size-section-title);
     color: var(--teal);;
-    letter-spacing: 1.6px;
+    letter-spacing: 0.01em;
     padding-bottom: 4px;
     border-bottom: 2px solid var(--teal);
     margin-bottom: 8px;
   }
 
+  .sidebar-section-subtitle {
+    font-size: var(--font-size-article-title);
+  }
+
   /* Status */
+  .section--status {
+    font-size: var(--font-size-status);
+  }
+
   .status-list {
     gap: 7px;
   }
 
   .status-item {
     gap: 8px;
-    font-size: var(--font-size-status);
   }
 
   .status-icon {
-    width: var(--icon-size-xl);
-    height: var(--icon-size-xl);
+    width: 1.2em;
+    height: 1.2em;
   }
 
   /* Contact */
@@ -106,36 +104,29 @@
 
   .contact-item {
     gap: 8px;
-    font-size: var(--font-size-contact);
   }
 
   .contact-icon {
-    width: var(--icon-size-m);
-    height: var(--icon-size-m);
+    width: 1em;
+    height: 1em;
   }
 
-  /* Compétences — sous-catégories */
-  .sidebar-label {
-    font-size: var(--font-size-title3);
-    margin-bottom: 4px;
-    margin-top: 8px;
-  }
-
+  /* Compétences */
   .pill-group {
-    gap: 3px;
+    gap: 0.3em;
   }
 
   .pill {
-    font-size: var(--font-size-pill);
-    padding: 2px 8px;
+    padding: 0.15em 1em;
   }
 
   /* Langues */
-  .lang-item {
+  .lang-list {
+    list-style: none;
+    padding: 0;
   }
 
-  .lang-item + .lang-item {
-    margin-top: 2px;
+  .lang-item {
   }
 
   /* Aptitudes */
@@ -161,7 +152,7 @@
   /* ── Contenu principal ──────────────────────────────────────── */
   .main-content {
     padding: 32px 30px 34px;
-    gap: 28px;
+    gap: 2.2em;
   }
 
   .main-content > * {
@@ -170,16 +161,14 @@
   }
 
   .main-title {
-    font-size: var(--font-size-title1);
-    letter-spacing: 2.3px;
-    color: #0f172a;
+    font-size: var(--font-size-title);
     text-shadow: 0 2px 8px rgba(148, 163, 184, 0.45);
   }
 
   /* Titres de section — main */
   .section-title--main {
-    font-size: var(--font-size-title2);
-    margin-bottom: 12px;
+    font-size: var(--font-size-section-title);
+    margin-bottom: 0.5em;
     border-bottom: none;
     display: flex;
     align-items: center;
@@ -226,7 +215,6 @@
 
   .profil-box {
     border-left: 3px solid var(--teal);
-    font-size: var(--font-size-profil);
   }
 
   .exp-header {
@@ -235,16 +223,16 @@
 
   .exp-title,
   .formation-degree {
-    font-size: var(--font-size-title3);
+    font-size: var(--font-size-article-title);
   }
 
   .exp-date {
-    font-size: var(--font-size-title4);
+    font-size: var(--font-size-article-subtitle);
   }
 
   .exp-company,
   .formation-school {
-    font-size: var(--font-size-title4);
+    font-size: var(--font-size-article-subtitle);
     margin-top: 4px;
   }
 
@@ -293,7 +281,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .section--side,
+  .sidebar-section,
   .profil-box,
   .exp-block,
   .formation-block {

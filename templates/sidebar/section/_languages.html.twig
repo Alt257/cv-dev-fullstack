@@ -25,15 +25,17 @@ Exemple d’appel :
 
 <!-- Langues -->
 <section class="section section--languages" aria-label="Langues">
-    <h2 class="section-title section-title--side">Langues</h2>
+    <h2 class="section-title sidebar-section-title">Langues</h2>
 
-    {% for item in languages %}
-        <p class="lang-item">
-            {{ item.flag }} {{ item.name }}
+    <ul class="lang-list">
+        {% for item in languages %}
+            <li class="lang-item">
+                {{ item.flag }} {{ item.name }}
 
-            {% if item.level is not null %}
-                — <strong>{{ item.level }}</strong>
-            {% endif %}
-        </p>
-    {% endfor %}
+                {% if item.level is not null %}
+                    — <strong>{{ item.level }}</strong>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
 </section>
