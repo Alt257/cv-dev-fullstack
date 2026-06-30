@@ -18,13 +18,13 @@ Exemple d’appel :
 #}
 
 <!-- Profil -->
-<section aria-label="Profil">
-    <h2 class="section-title-main">Profil</h2>
+<section class="section section--profile" aria-label="Profil">
+    <h2 class="section-title section-title--main">Profil</h2>
 
-    <div class="profil-box">
+    <article class="profil-box">
 
         {% if quote is not null %}
-            <blockquote>
+            <blockquote class="quote">
                 {{ quote }}
             </blockquote>
         {% endif %}
@@ -39,5 +39,5 @@ Exemple d’appel :
         {#        projets où la qualité du code rime avec l'impact réel sur les utilisateurs. #}
         {#        Ma vraie force : percevoir les connexions entre des éléments disparates et #}
         {#        concevoir comment les faire interagir de manière innovante et ingénieuse. #}
-    </div>
+    </article>
 </section>

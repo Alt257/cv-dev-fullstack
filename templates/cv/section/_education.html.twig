@@ -18,11 +18,11 @@ Exemple d’appel :
 #}
 
 <!-- Formation -->
-<section aria-label="Formation">
-    <h2 class="section-title-main">Formation</h2>
+<section class="section section--education" aria-label="Formation">
+    <h2 class="section-title section-title--main">Formation</h2>
 
     {% for item in education %}
-        <div class="formation-block">
+        <article class="formation-block">
             <div class="exp-header">
 
                 <h3 class="formation-degree">
@@ -45,6 +45,6 @@ Exemple d’appel :
             {% if item.note is not empty %}
                 <div class="formation-note">{{ item.note | markdown }}</div>
             {% endif %}
-        </div>
+        </article>
     {% endfor %}
 </section>

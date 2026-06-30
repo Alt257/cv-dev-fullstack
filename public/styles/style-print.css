@@ -118,7 +118,7 @@
     line-height: 1.08 !important;
   }
 
-  .sidebar-title {
+  .sidebar-section-title {
     font-size: 12px !important;
   }
 
@@ -260,7 +260,7 @@
     padding: 0 !important;
   }
 
-  body.print-bw .section-title-main {
+  body.print-bw .section-title--main {
     font-size: 14px !important;
     border-bottom: none !important;
     margin-bottom: 2px !important;
