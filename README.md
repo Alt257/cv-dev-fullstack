@@ -51,7 +51,7 @@ Ouvrez `http://localhost:8000` dans votre navigateur.
 
 ### Modifier l’apparence
 
-- `public/style.css` pour les styles globaux
+- `public/styles/*.css` pour les styles en fonction du media
 - `templates/` pour l’ordre, la structure et le rendu des sections
 
 ## 📁 Structure du projet

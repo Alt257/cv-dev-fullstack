@@ -12,7 +12,8 @@
   --teal-dark: #0891b2;
   --teal-light: #67e8f9;
   --white: #ffffff;
-  --sidebar-bg: #0f172a;
+  /*--sidebar-bg: #0f172a;*/
+  --sidebar-bg: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.62));
   /*--page-bg: #e2e8f0;*/
   --page-bg: radial-gradient(circle at 15% 20%, rgba(6, 182, 212, 0.2) 0%, transparent 42%),
   radial-gradient(circle at 85% 10%, rgba(14, 116, 144, 0.18) 0%, transparent 46%),
@@ -26,7 +27,6 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --transition: 150ms ease;
-  --page-padding-vertical: 20px;
 }
 
 /* ── Reset ──────────────────────────────────────────────────── */
@@ -63,7 +63,8 @@ blockquote {
   color: var(--text-main);
   line-height: 1.6;
   padding-left: 1.3em;
-  padding-bottom: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0;
 }
 
 blockquote::before {
@@ -132,12 +133,28 @@ blockquote::after {
 }
 
 /* ── CV Page  ───────────────────────────────────────────────── */
+.page-wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
+
 .cv-page {
   width: 100%;
-  background: var(--white);
   margin: 0 auto;
   position: relative;
+  background: var(--sidebar-bg);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 24px 70px rgba(2, 6, 23, 0.58),
+  0 1px 0 rgba(255, 255, 255, 0.14) inset;
+  backdrop-filter: blur(8px);
   overflow: hidden;
+}
+
+/* Titres de sections */
+.section-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 /* ── Sidebar ────────────────────────────────────────────────── */
@@ -152,11 +169,6 @@ blockquote::after {
   line-height: 1.02;
   color: var(--white);
   text-wrap: balance;
-}
-
-.sidebar-section-title {
-  text-transform: uppercase;
-  color: var(--teal-light);
 }
 
 .dot-pattern {
@@ -175,59 +187,73 @@ blockquote::after {
   background: var(--teal);
 }
 
-/* Titres de sections */
-.section-title {
-  font-weight: 700;
+.sidebar-section-title {
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
+  color: var(--teal-light);
 }
 
 .sidebar-section-subtitle {
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 0.3em;
-  margin-top: 0.6em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   color: var(--muted);
 }
 
 /* Status */
-.status-list {
+.status-list,
+.contact-list,
+.aptitude-list,
+.lang-list,
+.interest-list {
   display: flex;
   flex-direction: column;
+  gap: 0.4em;
 }
 
-.status-item {
+.status-item,
+.contact-item,
+.aptitude-item,
+.lang-item,
+.interest-item {
   display: flex;
+  gap: 0.5em;
+  color: var(--text-light);
+  line-height: 1.5;
+  word-break: keep-all;
   align-items: center;
-  font-weight: 500;
-  color: #cbd5e1;
-  line-height: 1.4;
-  word-break: break-all;
+}
+
+.status-icon,
+.contact-icon,
+.aptitude-icon,
+.lang-icon,
+.interest-icon {
+}
+
+
+.status-item {
 }
 
 .status-icon {
   flex-shrink: 0;
   text-align: center;
+  width: 1.2em;
+  height: 1.2em;
 }
 
 /* Contact */
 .contact-list {
-  display: flex;
-  flex-direction: column;
 }
 
 .contact-item {
-  display: flex;
-  align-items: center;
-  color: #cbd5e1;
-  line-height: 1.4;
-  word-break: break-all;
 }
 
 .contact-icon {
   flex-shrink: 0;
   text-align: center;
+  width: 1.2em;
+  height: 1.2em;
 }
 
 /* Compétences — sous-catégories */
@@ -238,6 +264,7 @@ blockquote::after {
 
 .pill {
   display: inline-block;
+  padding: 0.15em 1em;
   font-weight: 500;
   border-radius: 9999px;
   background: rgba(6, 182, 212, 0.15);
@@ -248,25 +275,17 @@ blockquote::after {
 }
 
 /* Langues */
-.lang-item {
-  color: var(--text-light);
-  line-height: 1.6;
+.lang-list {
 }
 
-.lang-item + .lang-item {
+.lang-item {
 }
 
 /* Aptitudes */
 .aptitude-list {
-  display: flex;
-  flex-direction: column;
 }
 
 .aptitude-item {
-  display: flex;
-  align-items: flex-start;
-  color: var(--text-light);
-  line-height: 1.4;
 }
 
 .aptitude-dot {
@@ -280,13 +299,10 @@ blockquote::after {
 
 /* Intérêts */
 .interest-list {
-  display: flex;
-  flex-direction: column;
 }
 
 .interest-item {
   color: var(--muted);
-  line-height: 1.5;
 }
 
 /* ── Contenu principal ──────────────────────────────────────── */
@@ -347,7 +363,6 @@ blockquote::after {
 .exp-note,
 .formation-note {
   color: var(--muted);
-  font-style: italic;
 }
 
 .exp-note ul,
@@ -361,7 +376,7 @@ blockquote::after {
 .formation-note li {
   color: var(--text-body);
   line-height: 1.5;
-  padding-left: 14px;
+  padding-left: 1.5em;
   position: relative;
 }
 

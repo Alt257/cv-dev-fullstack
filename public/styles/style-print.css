@@ -49,6 +49,7 @@
     margin-right: auto !important;
   }
 
+  section,
   article {
     break-inside: avoid !important;
     page-break-inside: avoid !important;
@@ -58,12 +59,15 @@
   body {
     margin: 0 !important;
     padding: 0 !important;
-    background: none !important;
     font-size: 9px !important;
     width: 100%;
     height: 100%;
     -webkit-text-size-adjust: 100% !important;
     text-size-adjust: 100% !important;
+  }
+
+  body {
+    background: linear-gradient(180deg, rgba(248, 250, 252, 0.98), rgba(226, 232, 240, 0.88)) !important;
   }
 
   * {
@@ -76,7 +80,6 @@
 
   .page-wrapper {
     padding: 0 !important;
-    background: none !important;
     height: 100%;
   }
 
@@ -200,8 +203,6 @@
     --accent-bg: #ffffff !important;
     --page-padding-vertical: 12mm !important;
     --page-padding-horizontal: 12mm !important;
-    color: black !important;
-    background: white !important;
   }
 
   body.print-bw {
@@ -209,6 +210,7 @@
     margin: auto !important;
   }
 
+  body.print-bw,
   body.print-bw * {
     color: black !important;
     background: white !important;
