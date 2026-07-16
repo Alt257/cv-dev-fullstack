@@ -22,9 +22,6 @@
     padding: 0 !important;
   }
 
-  @page {
-  }
-
   html,
   body {
   }
@@ -72,6 +69,8 @@
     padding: var(--page-padding-vertical) var(--page-padding-horizontal);
     border-right: 1px solid rgba(148, 163, 184, 0.18);
     gap: 2em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 
   .sidebar-name {
@@ -131,6 +130,8 @@
     font-size: var(--font-size-main);
     padding: var(--page-padding-vertical) var(--page-padding-horizontal);
     gap: 2.2em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 
   .main-content > * {
@@ -241,30 +242,26 @@
     --page-padding-horizontal: 12mm !important;
   }
 
-  .print-bw {
-    padding: var(--page-padding-vertical) var(--page-padding-horizontal) !important;
-    margin: auto !important;
-  }
-
+  /*.print-bw {*/
+  /*  padding: var(--page-padding-vertical) var(--page-padding-horizontal) !important;*/
+  /*  margin: auto !important;*/
+  /*}*/
   .print-bw,
   .print-bw * {
     color: black !important;
-    background: white !important;
+    background: none !important;
     box-shadow: none !important;
     border: none !important;
   }
 
   .print-bw .cv-page::after {
     display: none !important;
-    background: none !important;
     height: 0 !important;
   }
 
   .print-bw .sidebar {
-    padding: 0 !important;
-    gap: 22px !important;
-    height: auto !important;
-    min-height: 0 !important;
+    padding-right: 3mm !important;
+    gap: 5mm !important;
   }
 
   .print-bw .dot-pattern {
@@ -274,18 +271,18 @@
   .print-bw .section-title {
     font-size: 14px !important;
     font-weight: 700 !important;
-    border-bottom: none !important;
-    margin-bottom: 1px !important;
+    /*border-bottom: none !important;*/
+    /*margin-bottom: 0 !important;*/
   }
 
   .print-bw .sidebar-section-subtitle {
     font-size: 11px !important;
     font-weight: 700 !important;
-    margin-top: 12px !important;
+    margin-top: 2mm !important;
   }
 
   .print-bw .pill-group {
-    gap: 8px !important;
+    gap: 2mm !important;
   }
 
   .print-bw .pill {
@@ -294,18 +291,19 @@
   }
 
   .print-bw .main-content {
-    gap: 22px !important;
-    padding: 0 !important;
+    gap: 8mm !important;
+    padding-left: 0 !important;
+    /*padding: 0 !important;*/
   }
 
   .print-bw .section-title--main {
     font-size: 14px !important;
     border-bottom: none !important;
-    margin-bottom: 2px !important;
+    /*margin-bottom: 2px !important;*/
   }
 
   .print-bw .profil-box {
-    padding: 0 !important;
+    /*padding: 0 !important;*/
   }
 
   .print-bw blockquote {
@@ -314,7 +312,7 @@
     margin: 0 !important;
   }
 
-  .print-bw .exp-note li::before {
+  .print-bw li::before {
     color: black !important;
   }
 }
