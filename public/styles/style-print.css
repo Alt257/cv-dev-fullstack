@@ -242,10 +242,6 @@
     --page-padding-horizontal: 12mm !important;
   }
 
-  /*.print-bw {*/
-  /*  padding: var(--page-padding-vertical) var(--page-padding-horizontal) !important;*/
-  /*  margin: auto !important;*/
-  /*}*/
   .print-bw,
   .print-bw * {
     color: black !important;
@@ -260,8 +256,8 @@
   }
 
   .print-bw .sidebar {
-    padding-right: 3mm !important;
-    gap: 5mm !important;
+    padding-right: 5mm !important;
+    gap: 8mm !important;
   }
 
   .print-bw .dot-pattern {
@@ -271,8 +267,6 @@
   .print-bw .section-title {
     font-size: 14px !important;
     font-weight: 700 !important;
-    /*border-bottom: none !important;*/
-    /*margin-bottom: 0 !important;*/
   }
 
   .print-bw .sidebar-section-subtitle {
@@ -299,11 +293,6 @@
   .print-bw .section-title--main {
     font-size: 14px !important;
     border-bottom: none !important;
-    /*margin-bottom: 2px !important;*/
-  }
-
-  .print-bw .profil-box {
-    /*padding: 0 !important;*/
   }
 
   .print-bw blockquote {
