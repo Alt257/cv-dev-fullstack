@@ -115,6 +115,18 @@ profile:
     et optimiser les performances applicatives.
 
 experiences:
+  - title: "Développeur d'Applications Mobiles"
+    date: "Mars 2025 - Septembre 2025"
+    company: "SynapsIA"
+    company_href: "https://synapsia.fr"
+    location: "Metz, France"
+    note: |
+      *Développement d'une **application mobile (Flutter)** dans un contexte d'intelligence artificielle.*
+      - **Montée en compétences rapide :** Autonomie complète acquise sur le framework Flutter en moins de deux semaines pour répondre aux besoins de l'entreprise.
+      - **Développement et architecture :** Conception d'applications connectées à des modèles d'IA via l'intégration d'API REST et la gestion d'états complexes (pattern **BLoC**).
+      - **Performance et optimisation :** Audit et amélioration du code d'applications existantes, menant à de meilleurs temps de réponse et à la résolution de failles de sécurité majeures.
+      - **Collaboration et communication :** Participation active à la rédaction de spécifications fonctionnelles et UX, ainsi qu'à la rédaction de documents techniques.
+
   - title: "Développeur Full Stack Web & Mobile — Indépendant"
     title_href: "https://la-bonne-idee.com"
     date: "Octobre 2024 – présent"
@@ -127,18 +139,6 @@ experiences:
       - Mise en place de pipelines CI/CD, déploiement Docker, gestion Linux/SSH
       - Application systématique du TDD et des principes SOLID
       - Collaboration directe avec les clients pour la conception fonctionnelle et UX
-
-  - title: "Développeur d'Applications Mobiles"
-    date: "Mars 2025 - Septembre 2025"
-    company: "SynapsIA"
-    company_href: "https://synapsia.fr"
-    location: "Metz, France"
-    note: |
-      *Développement d'une **application mobile (Flutter)** dans un contexte d'intelligence artificielle.*
-      - **Montée en compétences rapide :** Autonomie complète acquise sur le framework Flutter en moins de deux semaines pour répondre aux besoins de l'entreprise.
-      - **Développement et architecture :** Conception d'applications connectées à des modèles d'IA via l'intégration d'API REST et la gestion d'états complexes (pattern **BLoC**).
-      - **Performance et optimisation :** Audit et amélioration du code d'applications existantes, menant à de meilleurs temps de réponse et à la résolution de failles de sécurité majeures.
-      - **Collaboration et communication :** Participation active à la rédaction de spécifications fonctionnelles et UX, ainsi qu'à la rédaction de documents techniques.
 
 
 volunteering:
