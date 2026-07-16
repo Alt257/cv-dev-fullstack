@@ -13,7 +13,7 @@
   --teal-light: #67e8f9;
   --white: #ffffff;
   /*--sidebar-bg: #0f172a;*/
-  --sidebar-bg: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.62));
+  --sidebar-bg: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgb(106 125 229 / 0.22));
   /*--page-bg: #e2e8f0;*/
   --page-bg: radial-gradient(circle at 15% 20%, rgba(6, 182, 212, 0.2) 0%, transparent 42%),
   radial-gradient(circle at 85% 10%, rgba(14, 116, 144, 0.18) 0%, transparent 46%),
@@ -159,7 +159,6 @@ blockquote::after {
 
 /* ── Sidebar ────────────────────────────────────────────────── */
 .sidebar {
-  background: var(--sidebar-bg);
   color: var(--text-light);
   display: flex;
   flex-direction: column;

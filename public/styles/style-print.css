@@ -1,41 +1,20 @@
 /* ── Impression PDF ─────────────────────────────────────────── */
 @media print {
   :root {
-    --navy: #0f172a !important;
-    --navy-light: #1e293b !important;
-    --teal: #06b6d4 !important;
-    --teal-dark: #0891b2 !important;
-    --teal-light: #67e8f9 !important;
-    --white: #ffffff !important;
-    --sidebar-bg: #0f172a !important;
-    --page-bg: #ffffff !important;
-    --muted: #94a3b8 !important;
-    --muted-dark: #64748b !important;
-    --text-main: #1e293b !important;
-    --text-body: #334155 !important;
-    --text-light: #cbd5e1 !important;
-    --accent-bg: #f0fdfa !important;
-  }
+    --font-size-main: 10px;
+    --font-size-sidebar: 10px;
 
-  body.print-color {
-    --navy: #0f172a !important;
-    --navy-light: #1e293b !important;
-    --teal: #06b6d4 !important;
-    --teal-dark: #0891b2 !important;
-    --teal-light: #67e8f9 !important;
-    --white: #ffffff !important;
-    --sidebar-bg: #0f172a !important;
-    --page-bg: #ffffff !important;
-    --muted: #94a3b8 !important;
-    --muted-dark: #64748b !important;
-    --text-main: #1e293b !important;
-    --text-body: #334155 !important;
-    --text-light: #cbd5e1 !important;
-    --accent-bg: #f0fdfa !important;
-  }
+    --font-size-title: 3.2em;
+    --font-size-section-title: 1.6em;
+    --font-size-article-title: 1.2em;
+    --font-size-article-subtitle: 1em;
+    --font-size-date: 1em;
+    --font-size-quote: 1.4em;
+    --font-size-status: 1.2em;
+    --font-size-contact: 1em;
 
-  .no-print {
-    display: none !important;
+    --page-padding-vertical: 12mm;
+    --page-padding-horizontal: 8mm;
   }
 
   @page :first {
@@ -44,149 +23,210 @@
   }
 
   @page {
-    padding: 22mm 12mm !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  section,
-  article {
-    break-inside: avoid !important;
-    page-break-inside: avoid !important;
+    /*padding: 22mm 12mm !important;*/
+    /*margin-left: auto !important;*/
+    /*margin-right: auto !important;*/
+    /*padding-top: 12mm !important;*/
   }
 
   html,
   body {
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: 9px !important;
-    width: 100%;
-    height: 100%;
-    -webkit-text-size-adjust: 100% !important;
-    text-size-adjust: 100% !important;
   }
 
-  body {
-    background: linear-gradient(180deg, rgba(248, 250, 252, 0.98), rgba(226, 232, 240, 0.88)) !important;
-  }
-
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    animation: none !important;
-    -webkit-text-size-adjust: 100% !important;
-    text-size-adjust: 100% !important;
-  }
-
-  .page-wrapper {
-    padding: 0 !important;
-    height: 100%;
-  }
-
-  .cv-page {
-    height: 100%;
-    min-height: 100vh !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-    box-shadow: none !important;
-    display: block !important;
-    grid-template-columns: 30% 70% !important;
-    grid-template-rows: auto !important;
-    position: relative;
-    border-radius: 0 !important;
-    overflow: visible !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  .cv-page::after {
-    top: 0;
-    bottom: auto;
-    left: 30%;
-    width: 70%;
-  }
-
-  .sidebar {
-    float: left;
-    width: 30% !important;
-    height: 100% !important;
-    min-height: 100% !important;
-    padding: var(--page-padding-vertical) 16px !important;
-    border-radius: 0 !important;
-    gap: 12px !important;
-  }
-
-  .sidebar-name {
-    font-size: 25px !important;
-    line-height: 1.08 !important;
-  }
-
-  .sidebar-section-title {
-    font-size: 12px !important;
-  }
-
-  .status-item {
-    font-size: 12px !important;
-  }
-
-  .contact-item {
-    font-size: 11px !important;
-    word-break: break-all !important;
-  }
-
-  .pill {
-    font-size: 9px !important;
-  }
-
-  .lang-item,
-  .aptitude-item {
-    font-size: 11px !important;
-  }
-
-  .interest-item {
-    font-size: 10px !important;
-  }
-
-  .main-content {
-    display: flex !important;
-    padding: var(--page-padding-vertical) 18px !important;
-    gap: 10px !important;
+  .sidebar section,
+  article {
+    page-break-inside: avoid !important;
   }
 
   blockquote {
-    font-size: 12px !important;
+    font-size: var(--font-size-quote);
+    margin-bottom: 1em;
   }
 
-  .profil-box {
-    font-size: 10px;
-  }
-
-  .exp-title {
-    font-size: 12px !important;
-  }
-
-  .exp-date {
-    font-size: 10px !important;
-  }
-
-  .exp-company {
-    font-size: 11px !important;
-  }
-
-  .exp-note {
-    font-size: 11px !important;
-  }
-
-  .formation-degree {
-    font-size: 12px !important;
-  }
-
-  .footer-cv {
+  .no-print {
     display: none !important;
   }
 
+  .page-wrapper {
+    padding: 0;
+  }
+
+  .cv-page {
+    background: none;
+    min-height: calc(200vh - 1px);
+    max-width: none;
+    display: grid;
+    box-shadow: none;
+    grid-template-columns: minmax(260px, 28%) minmax(0, 72%);
+    grid-template-rows: auto;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── Sidebar ────────────────────────────────────────────────── */
+  .sidebar {
+    font-size: var(--font-size-sidebar);
+    background: var(--sidebar-bg);
+    top: 0;
+    align-self: start;
+    min-height: 100%;
+    padding: var(--page-padding-vertical) var(--page-padding-horizontal);
+    border-right: 1px solid rgba(148, 163, 184, 0.18);
+    gap: 2em;
+  }
+
+  .sidebar-name {
+    font-size: var(--font-size-title);
+  }
+
+  .sidebar-section {
+    gap: 1em;
+  }
+
+  .sidebar-section-title {
+    font-size: var(--font-size-section-title);
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid var(--teal);
+  }
+
+  .sidebar-section-subtitle {
+    font-size: var(--font-size-article-title);
+    margin-bottom: 0.5em;
+  }
+
+  /* Status */
+  .section--status {
+    font-size: var(--font-size-status);
+  }
+
+  /* Contact */
+  .section--contact {
+    font-size: var(--font-size-contact);
+  }
+
+  /* Compétences */
+  .section--skills {
+  }
+
+  .pill-group {
+    gap: 0.3em;
+  }
+
+  .pill {
+  }
+
+  /* Langues */
+  .section--languages {
+  }
+
+  /* Aptitudes */
+  .section--aptitudes {
+  }
+
+  /* Intérêts */
+  .section--interests {
+  }
+
+  /* ── Contenu principal ──────────────────────────────────────── */
+  .main-content {
+    font-size: var(--font-size-main);
+    padding: var(--page-padding-vertical) var(--page-padding-horizontal);
+    gap: 2.2em;
+  }
+
+  .main-content > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .main-title {
+    font-size: var(--font-size-title);
+    text-shadow: 0 2px 8px rgba(148, 163, 184, 0.45);
+  }
+
+  .main-section {
+    gap: 1em;
+  }
+
+  /* Titres de section — main */
+  .section-title--main {
+    font-size: var(--font-size-section-title);
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+  }
+
+  .section-title--main::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, #06b6d4, rgba(6, 182, 212, 0));
+  }
+
+  .profil-box,
+  .exp-block,
+  .formation-block {
+    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.34);
+    padding: 1em 1.2em;
+    background: rgba(255, 255, 255, 0.76);
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.11);
+    transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+  }
+
+  .profil-box:hover,
+  .exp-block:hover,
+  .formation-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 36px rgba(15, 23, 42, 0.16);
+    border-color: rgba(14, 165, 233, 0.45);
+  }
+
+  .profil-box {
+    border-left: 3px solid var(--teal);
+  }
+
+  .exp-header {
+    gap: 5em;
+  }
+
+  .exp-title,
+  .formation-degree {
+    font-size: var(--font-size-article-title);
+  }
+
+  .exp-date {
+    font-size: var(--font-size-date);
+  }
+
+  .exp-company,
+  .formation-school {
+    font-size: var(--font-size-article-subtitle);
+    margin-top: 0.2em;
+  }
+
+  .exp-note,
+  .formation-note {
+    margin-top: 0.4em;
+  }
+
+  .exp-note ul,
+  .formation-note ul {
+    margin-top: 0.3em;
+    gap: 0.2em;
+  }
+
+  .exp-note li,
+  .formation-note li {
+    line-height: 1.5;
+  }
+
   /* ── Impression Noir et Blanc ───────────────────────────────── */
-  body.print-bw {
+  .print-bw {
     --navy: #000000 !important;
     --navy-light: #000000 !important;
     --teal: #000000 !important;
@@ -205,80 +245,80 @@
     --page-padding-horizontal: 12mm !important;
   }
 
-  body.print-bw {
+  .print-bw {
     padding: var(--page-padding-vertical) var(--page-padding-horizontal) !important;
     margin: auto !important;
   }
 
-  body.print-bw,
-  body.print-bw * {
+  .print-bw,
+  .print-bw * {
     color: black !important;
     background: white !important;
     box-shadow: none !important;
     border: none !important;
   }
 
-  body.print-bw .cv-page::after {
+  .print-bw .cv-page::after {
     display: none !important;
     background: none !important;
     height: 0 !important;
   }
 
-  body.print-bw .sidebar {
+  .print-bw .sidebar {
     padding: 0 !important;
     gap: 22px !important;
     height: auto !important;
     min-height: 0 !important;
   }
 
-  body.print-bw .dot-pattern {
+  .print-bw .dot-pattern {
     display: none !important;
   }
 
-  body.print-bw .section-title {
+  .print-bw .section-title {
     font-size: 14px !important;
     font-weight: 700 !important;
     border-bottom: none !important;
     margin-bottom: 1px !important;
   }
 
-  body.print-bw .sidebar-section-subtitle {
+  .print-bw .sidebar-section-subtitle {
     font-size: 11px !important;
     font-weight: 700 !important;
     margin-top: 12px !important;
   }
 
-  body.print-bw .pill-group {
+  .print-bw .pill-group {
     gap: 8px !important;
   }
 
-  body.print-bw .pill {
+  .print-bw .pill {
     padding: 0 !important;
     line-height: 1.2 !important;
   }
 
-  body.print-bw .main-content {
+  .print-bw .main-content {
     gap: 22px !important;
     padding: 0 !important;
   }
 
-  body.print-bw .section-title--main {
+  .print-bw .section-title--main {
     font-size: 14px !important;
     border-bottom: none !important;
     margin-bottom: 2px !important;
   }
 
-  body.print-bw .profil-box {
+  .print-bw .profil-box {
     padding: 0 !important;
   }
 
-  body.print-bw blockquote {
+  .print-bw blockquote {
     font-size: 12px !important;
     padding: 4px 8px !important;
     margin: 0 !important;
   }
 
-  body.print-bw .exp-note li::before {
+  .print-bw .exp-note li::before {
     color: black !important;
   }
 }
