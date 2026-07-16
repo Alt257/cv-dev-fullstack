@@ -28,6 +28,18 @@ Exemple d’appel :
 
 <!-- Status -->
 <section class="section sidebar-section section--status" aria-label="Statuts">
+
+    <!-- En-tête -->
+    <div class="sidebar-header">
+        <h1 class="title sidebar-name">{{ identity.firstname }}<br>{{ identity.lastname }}</h1>
+
+        <div aria-hidden="true" class="dot-pattern">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+    
     <ul class="status-list" style="list-style:none;">
         {% for item in status %}
             <li class="status-item">
