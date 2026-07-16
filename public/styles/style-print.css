@@ -23,10 +23,6 @@
   }
 
   @page {
-    /*padding: 22mm 12mm !important;*/
-    /*margin-left: auto !important;*/
-    /*margin-right: auto !important;*/
-    /*padding-top: 12mm !important;*/
   }
 
   html,
@@ -72,7 +68,7 @@
     background: var(--sidebar-bg);
     top: 0;
     align-self: start;
-    min-height: 100%;
+    min-height: calc(100%);
     padding: var(--page-padding-vertical) var(--page-padding-horizontal);
     border-right: 1px solid rgba(148, 163, 184, 0.18);
     gap: 2em;
