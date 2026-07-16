@@ -23,7 +23,7 @@ Variables attendues :
         Nom affiché dans l’en-tête de la sidebar.
 
 - status : array
-    Liste des statuts affichés par `sidebar/section/_status.html.twig`.
+    Liste des statuts affichés par `sidebar/section/_header.html.twig`.
 
 - contact : array
     Liste des informations de contact affichées par `sidebar/section/_contact.html.twig`.
@@ -49,7 +49,7 @@ Exemple d’appel :
             ══════════════════════════════════ -->
 <aside class="sidebar">
 
-    {% include 'sidebar/section/_status.html.twig' %}
+    {% include 'sidebar/section/_header.html.twig' %}
 
     {% include 'sidebar/section/_contact.html.twig' %}
 
